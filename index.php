@@ -6,7 +6,7 @@
     </head>
     <body>
         <?php
-        Hola :DD
+        Hola :DDd
         ?>
     </body>
 </html>
