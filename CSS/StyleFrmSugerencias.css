@@ -5,6 +5,20 @@ body{
     background-image: url(https://d1di2lzuh97fh2.cloudfront.net/files/4c/4c5/4c5fs8.jpg?ph=4ab7110501);  
 }
 
+.title-block{
+    background-color: brown;
+    border-radius: 10px;
+    width: 70%;
+    margin: auto;
+    
+}
+
+.form_title{
+    color: #ffffff;
+    padding: 10px;
+    font-size: 20px;
+}
+
 .form{
     background-color: #ffffff;
     margin: auto;
@@ -14,24 +28,53 @@ body{
     border-radius: 10px;
     box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
     text-align: center;
-    
-}
-
-.form_title{
-    font-size: 2rem;
-    margin-bottom: .5em;
-}
-
-.form_paragraph{
-    font-weignt:300;
 }
 
 .form_container{
-    margin-top: 3em;
-    display: grid;
-    gap:2.5em;
+    margin-bottom: 30px;
+    position:relative;
 }
 
-.form_group{
+.input, textarea{
+    width: 100%;
+    padding:10px;
+    outline: 0;
+    border: 1px solid #000;
+    color: #000;
+    background: transparent; 
+    font-size: 15px
+}
+
+.label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #000;
+    cursor: text;
+    transition: 0.2s;
+}
+
+.btn{
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: darkgreen;
+    border: 1px solid #000;
+    width:50%;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+    
+}
+
+.input:focus~label,
+.input:valid~label,
+textarea:focus~label,
+textarea:valid~label
+{
+    top:-35px;
+    font-size: 14px;
     
 }
