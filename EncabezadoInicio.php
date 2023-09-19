@@ -16,7 +16,7 @@
                 <h2 class="NombreTienda">TECHNOGAME</h2></a>
            
            <nav  class="OpcionesEncabezado">
-                   <a href="Inicio.php" class="Inicio">Inicio</a>
+                   <a href="index.php" class="Inicio">Inicio</a>
                    <a href="#" class="Comunidad">Comunidad</a>
                    <a href="#" class="Reservar">Reservar</a>
                    <a href="Ofertas.php" class="Ofertas">Ofertas</a>
