@@ -1,9 +1,6 @@
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
-*/
-/* 
-    Created on : 18 sept 2023, 22:24:14
-    Author     : Alejo
-*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
 

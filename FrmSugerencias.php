@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Sugerencias</title>
+    <link href="CSS/StyleFrmSugerencias.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
     <h1>Formulario de Sugerencias</h1>
