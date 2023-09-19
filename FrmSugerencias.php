@@ -14,7 +14,7 @@
 <body>
     
    <header class="Encabezado">
-       <a href="#" class="Logo">
+       <a href="index.php" class="Logo">
             <img src="Imagenes/LogoTechnoGame.jpeg" alt="Logo de la compañia"/>
             <h2 class="NombreTienda">TECHNOGAME</h2></a>
 
@@ -89,7 +89,7 @@
             <div class="enlaces-importantes">
                 <h3>ENLACES IMPORTANTES</h3>
                 <hr> </hr>
-                <h4><a href="#">Libro de reclamaciones</a></h4>
+                <h4><a href="FrmReclamos.php">Libro de reclamaciones</a></h4>
                 <hr></hr>
                 <h4><a href="FrmSugerencias.php">Sugerencias</a></h4>
             </div> 
