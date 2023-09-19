@@ -9,7 +9,7 @@
     <h1>Formulario de Sugerencias</h1>
     <p>Por favor, déjanos tus sugerencias:</p>
     
-    <form action="CFrmSugerencias.php" method="POST">
+    <form action="ProcesaForms.php" method="POST">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required><br><br>
         
