@@ -44,7 +44,7 @@
                 <hr></hr>
                 <h4><strong><a href="Nosotros.php">Nosotros</a></strong></h4>
                  <hr></hr>  
-                <h4><strong><a href="#">Nuestras tiendas</a></strong></h4>
+                 <h4><strong><a href="contactenos_ubiquenos.php">Nuestras tiendas</a></strong></h4>
                 <ul>
                 <li>Plaza Norte</li>
                 <li>Mega Plaza</li>
