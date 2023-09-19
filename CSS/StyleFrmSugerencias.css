@@ -13,5 +13,25 @@ body{
     padding: 4.5em 3em;
     border-radius: 10px;
     box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    text-align: center;
+    
+}
+
+.form_title{
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+
+.form_paragraph{
+    font-weignt:300;
+}
+
+.form_container{
+    margin-top: 3em;
+    display: grid;
+    gap:2.5em;
+}
+
+.form_group{
     
 }
