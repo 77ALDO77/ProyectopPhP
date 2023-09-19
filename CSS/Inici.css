@@ -1,0 +1,160 @@
+html{
+    box-sizing: border-box;
+    font-size: 60.5%;
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+body{
+background-image: url(https://d1di2lzuh97fh2.cloudfront.net/files/4c/4c5/4c5fs8.jpg?ph=4ab7110501);
+}
+img{
+    width: 100%;
+}
+
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    background-image: url(https://d1di2lzuh97fh2.cloudfront.net/files/4c/4c5/4c5fs8.jpg?ph=4ab7110501);
+}
+
+.nustros-productos{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.productos{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+
+   
+}
+.producto{
+    background-color: rgba(255, 55, 55, 0.768);;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.producto-blanco{
+    background-color: white;
+    height: 40rem;
+    object-fit: contain;
+    padding: 1rem;
+}
+
+.producto-precio,
+.producto-nombre{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.producto-precio{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.producto-nombre{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+
+
+
+
+
+footer{
+            background-color:  black;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .PieDePagina {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .contacto, .enlaces-importantes, .Informacion {
+            flex: 1;
+            text-align: left;
+            padding: 0 20px;
+            margin-bottom: 20px;
+        }
+
+        .contacto h3, .enlaces-importantes h3, .Informacion h3 {
+            color: #fff;
+            font-size: 20px; 
+            
+        }
+/*Configuracion de los ul */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            
+        }
+ /*Configuracion de los ul li*/
+        ul li {
+            margin: 5px 0;
+            line-height: 1.2; 
+        }
+        /*Configuracion de los links*/
+        a{
+            color: #fff;
+            text-decoration: none;
+           
+        }
+        
+    .contacto h4 .enlaces-importantes h4 .Informacion h4{
+    line-height:0.45; 
+    font-size: 30px; }
+main{
+    font-family: sans-serif; 
+    margin:0;  
+    background-image: url(https://www.sitew.com/images/blog/articles/site-jeux/gaming.jpeg);
+}
+
+
+header {
+     
+           display: flex; 
+           justify-content: space-between; 
+           background-color: black;
+           height: 70px;
+           align-items: center; 
+           padding: 10px; 
+        }
+        .Logo {
+            display: flex; 
+            align-items: center; 
+            color:   #fff;
+            text-decoration: none;
+        }
+        .NombreTienda{
+            margin-left: 20px; 
+        }
+        .Logo img {
+            height: 55px; 
+        }
+         a{
+            color:   #fff ;
+            text-decoration: none;
+        }
+        nav a {
+            font-weight: 600; 
+            padding-right: 10px;
+        }
+        nav a:hover{
+            color:   #ffb638; 
+            
+        }
+   
