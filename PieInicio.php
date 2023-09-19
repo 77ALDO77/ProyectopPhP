@@ -49,6 +49,9 @@
                 <li>Plaza Norte</li>
                 <li>Mega Plaza</li>
                 <li>Real Plaza</li>
+                <li>Mall Aventura Santa Anita</li>
+                <li>Plaza Sur</li>
+                <li>Jockey Plaza</li>
                 </ul>
                 <hr></hr>
                 <h4><strong><a href="#">¿Cómo comprar?</a></strong></h4>
