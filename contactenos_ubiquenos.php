@@ -3,10 +3,12 @@
         <meta charset="UTF-8">
         <title>sw ABC</title>
         <link href="CSS/EstiloContactenos_Ubiquenos.css" rel="stylesheet" type="text/css"/>
+        <?php include('EncabezadoInicio.php'); ?>
     </head>
     <body>
         <div id="contenedor-cont_ubic">
         <header>
+            <div id="contenedorredes">
             <div id="contacto"><center><h1>Contáctenos</h1></center></div>
             <div id="redesSociales"><h3>Redes sociales</h3></div>
             <div id="inforedes"><h3>¿Tienes alguna pregunta o inquietud? ¡Conéctate con nosotros en nuestras redes sociales y obtén respuestas rápidas y personalizadas! 
@@ -28,6 +30,7 @@
                 <img src="Imagenes/LogoTwitter.jpg" alt="Twitter"/>
             </a>
         </div>
+            </div>
             <div id="telefono"><h3>Teléfono</h3>
             </div>
             <div id="infotelefono"><h4>(+51)964593567</h4>
@@ -35,8 +38,7 @@
             <div id="infotelefono2"><h4>¿Necesitas ayuda? Llámanos. Nuestro equipo estará encantado de atenderte en horario laboral. 
                     Si nos contactas fuera de ese horario, nuestro bot te proporcionará información básica hasta que estemos disponibles para asistirte.</h4>
             </div>
-            <div id="correo"><h3>Correo Electrónico</h3>
-                </<div>
+            <div id="correo"><h3>Correo Electrónico</h3></div>
                     <div id="horario"><h3>Horario</h3>
                     </div>
                     <div id="infohorario"><h4>¡Estamos a tu disposición! Nuestro equipo está disponible para atenderte en el siguiente horario:
@@ -105,5 +107,6 @@
         </footer>
         </div>
     </body>
+    <?php include('PieInicio.php'); ?>
     
 </html>
