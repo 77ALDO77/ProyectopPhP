@@ -4,27 +4,31 @@
     <head>
         <meta charset="UTF-8">
         <title>Ofertas</title>
+        <link href="CSS/EstiloOfertas.css" rel="stylesheet" type="text/css"/>
+        <?php include('EncabezadoInicio.php'); ?>
     </head>
     <body>
-        <header>
-            <div id="Technogame"><b>TECHNOGAME</b></div>
-        </header>
+        <br>
         <div id="Panel1">
             <center>
-            <img src="IMG/SM2.jpg" alt="Preventa Spider-Man 2"/>
+            <img src="Imagenes/SM2.jpg" alt="Preventa Spider-Man 2"/>
             </center>
         </div>
         <br>
         <div id="Panel2">
             <center>
-            <img src="IMG/FC24.jpg" alt="Preventa FC24"/>
+            <img src="Imagenes/FC24.jpg" alt="Preventa FC24"/>
             </center>
         </div>
         <br>
         <div id="Panel3">
             <center>
-            <img src="IMG/MK1.jpg" alt="Preventa Mortal Kombat 1"/>
+            <img src="Imagenes/MK1.jpg" alt="Preventa Mortal Kombat 1"/>
             </center>
         </div>
+        <br>
+        <footer>
+            <?php include('PieInicio.php'); ?>
+        </footer>
     </body>
 </html>

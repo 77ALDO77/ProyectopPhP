@@ -4,13 +4,12 @@
     <head>
         <meta charset="UTF-8">
         <title>Nosotros</title>
+        <link href="CSS/EstiloNosotros.css" rel="stylesheet" type="text/css"/>
+        <?php include('EncabezadoInicio.php'); ?>
     </head>
     <body>
-        <header>
-            <div id="Technogame"><b>TECHNOGAME</b></div> 
-        </header>
         <div id="Quienessomos">
-            <h2><b>¿Quiénes somos?</b></h2>
+            <h2><b>¿QUIÉNES SOMOS?</b></h2>
             Somos una empresa dedicada a la comercialización de productos de entretenimiento,
             con tiendas físicas ubicadas en varios distritos de la ciudad de Lima
             y con cobertura mediante nuestra página web.
@@ -29,5 +28,8 @@
             coleccionables y afines a la cultura pop, brindando un servicio excelente 
             a nuestros clientes.
         </div>
+        <footer>
+            <?php include('PieInicio.php'); ?>
+        </footer>
     </body>
 </html>
