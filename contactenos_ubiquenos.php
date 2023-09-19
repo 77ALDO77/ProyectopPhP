@@ -1,10 +1,13 @@
+
+
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>sw ABC</title>
+        <title>TecnoGamer</title>
         <link href="CSS/EstiloContactenos_Ubiquenos.css" rel="stylesheet" type="text/css"/>
         <?php include('EncabezadoInicio.php'); ?>
     </head>
+    
     <body>
         <div id="contenedor-cont_ubic">
             <header>

@@ -3,58 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <title>Tienda de Videojuegos</title>
-    <style>
-        /* Estilos CSS simples para mejorar la apariencia */
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-        .producto {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin: 10px;
-            width: 200px;
-            float: left;
-        }
-        .nombre {
-            font-weight: bold;
-        }
-    </style>
+    <link href="CSS/Inici.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    <?php include('EncabezadoInicio.php'); ?>
-    
-    <main>
-    
-        <h1>Bienvenido a la Tienda de Videojuegos</h1>
+        
+     <main class="contenedor">
+                <h1 class="nustros-productos">Nuestros Productos</h1>
+                <!--INICIO PRODUCTOS-->
+                <div class="productos">
+                    <!---INICIO PRODUCTO-->
+                    <div class="producto">
+                        <div class="producto-blanco">
+                            <img src="Imagenes/funko-pop-disney-classics-mickey-mouse_1.jpg" alt=""/>
+                        </div>
+                        <div class="producto-informacion">
+                            <p class="producto-nombre">Funko pop Mickey</p>
+                            <p class="producto-precio">$205</p>
+                        </div>
+                    </div>
+                    <!---INICIO PRODUCTO-->
+                    <div class="producto">
+                        <div class="producto-blanco">
+                            <img src="Imagenes/Monopoly.jpg" alt=""/>
+                        </div>
+                        <div class="producto-informacion">
+                            <p class="producto-nombre">Monopoly</p>
+                            <p class="producto-precio">$45</p>
+                        </div>
+                    </div>
+                    <!---INICIO PRODUCTO-->
+                    <div class="producto">
+                        <div class="producto-blanco">
+                            <img src="Imagenes/super_smash_bros_ultimate_switch_1.jpg" alt=""/>
+                        </div>
+                        <div class="producto-informacion">
+                            <p class="producto-nombre">Super Smash Bros</p>
+                            <p class="producto-precio">$249</p>
+                        </div>
+                    </div>
+                    <!---INICIO PRODUCTO-->
+                    <div class="producto">
+                        <div class="producto-blanco">
+                            <img src="Imagenes/silla_Razer.jpg" alt=""/>
+                        </div>
+                        <div class="producto-informacion">
+                            <p class="producto-nombre">Silla Gamer Razer</p>
+                            <p class="producto-precio">$1599</p>
+                        </div>
+                    </div>
+                    <!---INICIO PRODUCTO-->
+                    <div class="producto">
+                        <div class="producto-blanco">
+                            <img src="Imagenes/ps5_consola_spiderman_2_2_.jpg" alt=""/>
+                        </div>
+                        <div class="producto-informacion">
+                            <p class="producto-nombre">PS5 Edc. Spaiderman</p>
+                            <p class="producto-precio">$3999</p>
+                        </div>
+                    </div>
+                    <!---INICIO PRODUCTO-->
+                    <div class="producto">
+                        <div class="producto-blanco">                                           
+                            <img src="Imagenes/pokemoncard.jpg" alt=""/>
+                        </div>
+                        <div class="producto-informacion">
+                            <p class="producto-nombre">Pokémon Trading Card Game</p>
+                            <p class="producto-precio">$139</p>
+                        </div>
+                    </div>
+                    <!---INICIO PRODUCTO-->
+                    <div class="producto">
+                        <div class="producto-blanco">
+                            <img src="Imagenes/marvel_legends_hulk_y_bruce_banner_avengers_1_.jpg" alt=""/>
+                        </div>
+                        <div class="producto-informacion">
+                            <p class="producto-nombre">Marvel Legends Series - Hulk gris y Dr. Bruce Banner</p>
+                            <p class="producto-precio">$360</p>
+                        </div>
+                    </div>
+                    <!---INICIO PRODUCTO-->
+                    <div class="producto">
+                        <div class="producto-blanco">
+                            <img src="Imagenes/marvel_legends_gamerverse_-_spider-man_2_0_.jpg" alt=""/>
+                        </div>
 
-        <h2>Nuestros Productos Destacados:</h2>
+                        <div class="producto-informacion">
+                            <p class="producto-nombre">Marvel Legends Gamerverse - Spider-Man 2</p>
+                            <p class="producto-precio">$200</p>
+                        </div>
+                    </div>
+                    <!---INICIO PRODUCTO-->
+                    <div class="producto">
+                        <div class="producto-blanco">
+                            <img src="Imagenes/mando_xbox_series_x_negro_1_.jpg" alt=""/>
+                        </div>
+                        <div class="producto-informacion">
+                            <p class="producto-nombre">Mando Xbox Inalámbrico para Xbox Series X/S, One, PC - Negro Carbón</p>
+                            <p class="producto-precio">$330</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!--FIN DEL CONTENIDO PRINCIPAL-->
 
-        <?php
-            // Array de productos con nombre, descripción y precio
-            $productos = array(
-                array("nombre" => "FIFA 22", "descripcion" => "Simulador de fútbol", "precio" => 60),
-                array("nombre" => "Cyberpunk 2077", "descripcion" => "RPG de ciencia ficción", "precio" => 70),
-                array("nombre" => "The Last of Us Part II", "descripcion" => "Aventura y acción", "precio" => 50)
-            );
-
-            // Función para mostrar productos
-            function mostrarProductos($productos) {
-                foreach ($productos as $producto) {
-                    echo "<div class='producto'>";
-                    echo "<p class='nombre'>{$producto['nombre']}</p>";
-                    echo "<p>{$producto['descripcion']}</p>";
-                    echo "<p>Precio: {$producto['precio']} USD</p>";
-                    echo "<button>Agregar al Carrito</button>";
-                    echo "</div>";
-                }
-            }
-
-            // Llamar a la función para mostrar productos
-            mostrarProductos($productos);
-        ?>  
-    </main>
-    
-</body>
+    </body>
 </html>
 
