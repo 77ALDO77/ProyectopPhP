@@ -11,24 +11,24 @@
         <br>
         <div id="Panel1">
             <center>
-            <img src="Imagenes/SM2.jpg" alt="Preventa Spider-Man 2"/>
+                <img src="Imagenes/SM2.jpg" alt="Preventa Spider-Man 2"/>
             </center>
         </div>
         <br>
         <div id="Panel2">
             <center>
-            <img src="Imagenes/FC24.jpg" alt="Preventa FC24"/>
+                <img src="Imagenes/FC24.jpg" alt="Preventa FC24"/>
             </center>
         </div>
         <br>
         <div id="Panel3">
             <center>
-            <img src="Imagenes/MK1.jpg" alt="Preventa Mortal Kombat 1"/>
+                <img src="Imagenes/MK1.jpg" alt="Preventa Mortal Kombat 1"/>
             </center>
         </div>
         <br>
-        <footer>
-            <?php include('PieInicio.php'); ?>
-        </footer>
     </body>
+    <foot>
+        <?php include('PieInicio.php'); ?>
+    </foot>
 </html>

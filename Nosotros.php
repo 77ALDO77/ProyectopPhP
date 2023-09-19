@@ -28,8 +28,8 @@
             coleccionables y afines a la cultura pop, brindando un servicio excelente 
             a nuestros clientes.
         </div>
-        <footer>
-            <?php include('PieInicio.php'); ?>
-        </footer>
     </body>
+    <foot>
+        <?php include('PieInicio.php'); ?>
+    </foot>
 </html>
