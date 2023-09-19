@@ -23,6 +23,7 @@ body{
     font-family: "Times New Roman", sans-serif;
     margin-left: 230px;
     max-width: 50%;
+    margin-left: 170px;
 }
 #inforedes{
     width: 50%; /* Limita el ancho al 50% de la página */
@@ -41,45 +42,47 @@ body{
     cursor: pointer;
     text-transform: uppercase;
     transition: 1s;
+    margin-top: 190px;
 }
 #contacto::after {
     content: ""; /* Crea un elemento vacío después del contenido de #contacto */
     display: block; /* Hace que el elemento sea un bloque */
     width: 100%; /* Ancho completo del contenedor #contacto */
     border-bottom: 2px solid #000; /* Establece un subrayado de 2 píxeles de grosor en negro */
-    margin-top: 5px; /* Ajusta la distancia entre la palabra y el subrayado */
+    margin-top: 30px; /* Ajusta la distancia entre la palabra y el subrayado */
     margin-bottom: 10px;
 }
 #imagredes1 img,
 #imagredes2 img {
     border: 2px solid #000; /* Borde sólido de 2 píxeles de grosor y color negro */
     border-radius: 15%; /* Hace que las imágenes sean círculos */
-    margin-top: 15px;
-    margin-left: 55px;
+    margin-top: 10px;
+    margin-left: 20px;
     max-width: 50%;
+    clear: both;
 }
 #telefono{
     position: absolute;
     margin-right: 20px;
     font-size: 30px;
     top: 0;
-    margin-top: 155px;
-    margin-left: 910px;
+    margin-top: 180px;
+    margin-left: 725px;
 }
 #infotelefono {
     position: absolute;
     margin-right: 20px;
     font-size: 30px;
     top: 0;
-    margin-top: 320px;
-    margin-left: 880px;
+    margin-top: 360px;
+    margin-left: 680px;
 }
 #infotelefono2 {
     position: absolute;
     font-size: 20px;
     top: 0;
-    margin-top: 210px;
-    margin-right: 330px;
+    margin-top: 230px;
+    margin-right: 290px;
     right: 0; /* Alinea el elemento a la derecha de su contenedor */
     width: 30%; /* Limita el ancho al 50% de la página */
     max-width: 30%; /* Limita el ancho máximo al 50% */
@@ -89,15 +92,15 @@ body{
     margin-right: 20px;
     font-size: 30px;
     top: 0;
-    margin-top: 385px;
-    margin-left: 910px;
+    margin-top: 400px;
+    margin-left: 725px;
 }
 #infohorario{
     position: absolute;
     font-size: 20px;
     top: 0;
-    margin-top: 425px;
-    margin-right: 330px;
+    margin-top: 450px;
+    margin-right: 280px;
     right: 0; /* Alinea el elemento a la derecha de su contenedor */
     width: 30%; /* Limita el ancho al 50% de la página */
     max-width: 30%;
@@ -107,31 +110,31 @@ body{
     margin-right: 20px;
     font-size: 25px;
     top: 0;
-    margin-top: 510px;
-    margin-left: 780px;
+    margin-top: 520px;
+    margin-left: 600px;
 }
 #correo {
     position: absolute;
     margin-right: 20px;
     font-size: 30px;
     top: 0;
-    margin-top: 570px;
-    margin-left: 830px;
+    margin-top: 590px;
+    margin-left: 650px;
 }
 #infocorreo {
     position: absolute;
     margin-right: 20px;
     font-size: 30px;
     top: 0;
-    margin-top: 735px;
-    margin-left: 825px;
+    margin-top: 800px;
+    margin-left: 650px;
 }
 #infocorreo2 {
     position: absolute;
     font-size: 20px;
     top: 0;
-    margin-top: 625px;
-    margin-right: 330px;
+    margin-top: 645px;
+    margin-right: 280px;
     right: 0; /* Alinea el elemento a la derecha de su contenedor */
     width: 30%; /* Limita el ancho al 50% de la página */
     max-width: 30%; /* Limita el ancho máximo al 50% */
@@ -144,23 +147,24 @@ p{
     margin-right: 20px;
     font-size: 30px;
     top: 0;
-    margin-top: 305px;
-    margin-left: 810px;
+    margin-top: 345px;
+    margin-left: 610px;
 }
 #LogoCorreo {
     position: absolute;
     margin-right: 20px;
     font-size: 30px;
     top: 0;
-    margin-top: 720px;
-    margin-left: 760px;
+    margin-top: 785px;
+    margin-left: 580px;
 }
 .fijarCaja{
     clear: both;
 }
 #Contenedor-tiendas {
-    width: 1200px; 
+    width: 100%; 
     margin: 40px auto; 
+    margin-top: 200px;
     padding: 10px;
     border: 1px solid #ccc; 
     background-color: #f9f9f9; 
