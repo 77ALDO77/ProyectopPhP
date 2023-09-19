@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+body{
+    background-image: url(https://d1di2lzuh97fh2.cloudfront.net/files/4c/4c5/4c5fs8.jpg?ph=4ab7110501);
+}
+
+#contenedor-cont_ubic{
+    width: calc(70%);
+    margin: 20px auto;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 15px 15px 15px 15px;
+    padding: 15px;
+}
+#contenedor-cont_ubic>header{
+    height: 75%;
+    background-color: #fff;
+}
+#redesSociales h3{
+    font-size: 30px;
+    font-family: "Times New Roman", sans-serif;
+    margin-left: 230px;
+    max-width: 50%;
+}
+#inforedes{
+    width: 50%; /* Limita el ancho al 50% de la página */
+    padding: 20px;
+    max-width: 50%;
+}
+#contacto h1{
+    font-size: 40px;
+    font-weight: 500;
+    color: #ccc;
+    text-shadow: 0 0 5px #cc00cc,
+    0 0 25px #cc00cc,
+    0 0 50px #cc00cc,
+    0 0 100px #cc00cc;
+    letter-spacing: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 1s;
+}
+#contacto::after {
+    content: ""; /* Crea un elemento vacío después del contenido de #contacto */
+    display: block; /* Hace que el elemento sea un bloque */
+    width: 100%; /* Ancho completo del contenedor #contacto */
+    border-bottom: 2px solid #000; /* Establece un subrayado de 2 píxeles de grosor en negro */
+    margin-top: 5px; /* Ajusta la distancia entre la palabra y el subrayado */
+    margin-bottom: 10px;
+}
+#imagredes1 img,
+#imagredes2 img {
+    border: 2px solid #000; /* Borde sólido de 2 píxeles de grosor y color negro */
+    border-radius: 15%; /* Hace que las imágenes sean círculos */
+    margin-top: 15px;
+    margin-left: 55px;
+    max-width: 50%;
+}
+#telefono{
+    position: absolute;
+    margin-right: 20px;
+    font-size: 30px;
+    top: 0;
+    margin-top: 155px;
+    margin-left: 910px;
+}
+#infotelefono {
+    position: absolute;
+    margin-right: 20px;
+    font-size: 30px;
+    top: 0;
+    margin-top: 320px;
+    margin-left: 880px;
+}
+#infotelefono2 {
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    margin-top: 210px;
+    margin-right: 330px;
+    right: 0; /* Alinea el elemento a la derecha de su contenedor */
+    width: 30%; /* Limita el ancho al 50% de la página */
+    max-width: 30%; /* Limita el ancho máximo al 50% */
+}
+#horario {
+    position: absolute;
+    margin-right: 20px;
+    font-size: 30px;
+    top: 0;
+    margin-top: 385px;
+    margin-left: 910px;
+}
+#infohorario{
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    margin-top: 425px;
+    margin-right: 330px;
+    right: 0; /* Alinea el elemento a la derecha de su contenedor */
+    width: 30%; /* Limita el ancho al 50% de la página */
+    max-width: 30%;
+}
+#infohorario2{
+    position: absolute;
+    margin-right: 20px;
+    font-size: 25px;
+    top: 0;
+    margin-top: 510px;
+    margin-left: 780px;
+}
+#correo {
+    position: absolute;
+    margin-right: 20px;
+    font-size: 30px;
+    top: 0;
+    margin-top: 570px;
+    margin-left: 830px;
+}
+#infocorreo {
+    position: absolute;
+    margin-right: 20px;
+    font-size: 30px;
+    top: 0;
+    margin-top: 735px;
+    margin-left: 825px;
+}
+#infocorreo2 {
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    margin-top: 625px;
+    margin-right: 330px;
+    right: 0; /* Alinea el elemento a la derecha de su contenedor */
+    width: 30%; /* Limita el ancho al 50% de la página */
+    max-width: 30%; /* Limita el ancho máximo al 50% */
+}
+p{
+    margin: 0;
+}
+#LogoTelefono{
+    position: absolute;
+    margin-right: 20px;
+    font-size: 30px;
+    top: 0;
+    margin-top: 305px;
+    margin-left: 810px;
+}
+#LogoCorreo {
+    position: absolute;
+    margin-right: 20px;
+    font-size: 30px;
+    top: 0;
+    margin-top: 720px;
+    margin-left: 760px;
+}
+.fijarCaja{
+    clear: both;
+}
+#Contenedor-tiendas {
+    width: 1200px; 
+    margin: 40px auto; 
+    padding: 10px;
+    border: 1px solid #ccc; 
+    background-color: #f9f9f9; 
+    overflow-y: auto;
+    box-sizing: border-box;
+    clear: both;
+    background-image: url(https://d1di2lzuh97fh2.cloudfront.net/files/4c/4c5/4c5fs8.jpg?ph=4ab7110501);
+}
+#titulotiendas{
+    background-color: #e0e0e0; /* Color de fondo para el título */
+    padding: 20px; /* Espaciado interno */
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    box-sizing: border-box; /* Incluye el espaciado en el ancho total */
+    margin: 0; /* Elimina el margen predeterminado del encabezado */
+    color: #fff;
+    display: block;
+    border-bottom: 2px solid #000; /* Línea de borde inferior */
+    background-color: #221b1b;
+}
+
+#Listatiendas {
+    margin-top: 20px;
+    list-style-type: none; /* Elimina los puntos de lista */
+    padding: 0;
+}
+
+#Listatiendas li {
+    background-color: #e0e0e0;
+    padding: 20px;
+    width: 30%;
+    margin: 10px auto; 
+    box-sizing: border-box; 
+    float: left; 
+    clear: both;
+}
+.tienda {
+    background-color: #e0e0e0;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto; 
+    box-sizing: border-box; 
+    float: left; 
+    clear: both;
+}
+
+.tienda h3 {
+    margin: 0;
+}
+
+.tienda p {
+    margin: 0;
+    font-size: 14px; /* Tamaño de fuente más pequeño para la descripción */
+}
+#mapa {
+    width: 70%;
+    margin-left: 400px;
+}

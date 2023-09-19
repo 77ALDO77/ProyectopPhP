@@ -1,0 +1,39 @@
+#Quienessomos{
+    width: calc(70%);
+    margin: 20px auto;
+    border: 2px solid #000000;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 0px 20px #000000;
+}
+
+.text-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Vision{
+    width: calc(70%);
+    margin: 20px auto;
+    border: 2px solid #000000;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 0px 20px #000000;
+}
+
+#Mision{
+    width: calc(70%);
+    margin: 20px auto;
+    border: 2px solid #000000;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 0px 20px #000000;
+}
+
+body{
+    background-image: url(https://d1di2lzuh97fh2.cloudfront.net/files/4c/4c5/4c5fs8.jpg?ph=4ab7110501);
+}
