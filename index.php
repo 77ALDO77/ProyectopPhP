@@ -1,12 +1,3 @@
-
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
-        <?php
-        Hola :DDd
-        ?>
-    </body>
-</html>
+<?php include('EncabezadoInicio.php'); ?>
+<main><!-- Escribir contenido de inicio (Aldo) --></main>
+<?php include('PieInicio.php'); ?>
