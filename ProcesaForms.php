@@ -1,0 +1,4 @@
+<?php
+
+echo "Informacion enviada";
+
