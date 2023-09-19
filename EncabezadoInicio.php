@@ -16,11 +16,11 @@
                 <h2 class="NombreTienda">TECHNOGAME</h2></a>
            
            <nav  class="OpcionesEncabezado">
-                   <a href="#" class="Inicio">Inicio</a>
+                   <a href="Inicio.php" class="Inicio">Inicio</a>
                    <a href="#" class="Comunidad">Comunidad</a>
                    <a href="#" class="Reservar">Reservar</a>
-                   <a href="#" class="Ofertas">Ofertas</a>
-                   <a href="#" class="Contacto">Contacto</a>
+                   <a href="Ofertas.php" class="Ofertas">Ofertas</a>
+                   <a href="contactenos_ubiquenos.php" class="Contacto">Contacto</a>
                    <a href="#" class="Servicio al cliente">Servicio al cliente</a>
                    <a href="#" class="Comunidad">Sobre nosotros</a>
                
