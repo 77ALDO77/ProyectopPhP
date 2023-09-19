@@ -10,16 +10,35 @@
     <p>Por favor, déjanos tus sugerencias:</p>
     
     <form action="ProcesaForms.php" method="POST">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required><br><br>
+        <div class="form_container">
+          
+            <input type="text" id="nombre" class="input" required="">   
+            <label for="nombre" class="label">Nombres y Apellidos:</label>
+            <span class="form_line"></span>
+        </div>
         
-        <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" required><br><br>
+        <div class="form_container">
+          
+            <input type="email" id="email" class="input" required="">   
+            <label for="email" class="label">Correo:</label>
+            <span class="form_line"></span>
+        </div>
         
-        <label for="sugerencia">Sugerencia:</label><br>
-        <textarea id="sugerencia" name="sugerencia" rows="4" cols="50" required></textarea><br><br>
+        <div class="form_container">
+          
+            <input type="text" id="numero" class="input" required="">   
+            <label for="numero" class="label">Celular:</label>
+            <span class="form_line"></span>
+        </div>
         
-        <input type="submit" value="Enviar">
+        <div class="form_container">
+          
+            <textarea id="sugerencia" rows="4" cols="50" required=""></textarea>  
+            <label for="sugerencia" class="label">Detalle de la Sugerencia:</label>
+            <span class="form_line"></span>
+        </div>
+        
+        <button class="btn">Enviar</button>
     </form>
 </body>
 </html>
