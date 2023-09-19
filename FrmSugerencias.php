@@ -15,28 +15,28 @@
             
             <div class="form_container">
 
-                <input type="text" id="nombre" class="input" required="">   
+                <input type="text" id="nombre" class="input" placeholder=" " required="">   
                 <label for="nombre" class="label">Nombres y Apellidos:</label>
                 <span class="form_line"></span>
             </div>
 
             <div class="form_container">
 
-                <input type="email" id="email" class="input" required="">   
+                <input type="email" id="email" class="input" placeholder=" " required="">   
                 <label for="email" class="label">Correo:</label>
                 <span class="form_line"></span>
             </div>
 
             <div class="form_container">
 
-                <input type="text" id="numero" class="input" required="">   
+                <input type="text" id="numero" class="input" placeholder=" " required="">   
                 <label for="numero" class="label">Celular:</label>
                 <span class="form_line"></span>
             </div>
 
             <div class="form_container">
 
-                <textarea id="sugerencia" rows="4" cols="50" required=""></textarea>  
+                <textarea id="sugerencia" rows="4" cols="50" placeholder="" required=" "></textarea>  
                 <label for="sugerencia" class="label">Detalle de la Sugerencia:</label>
                 <span class="form_line"></span>
             </div>
