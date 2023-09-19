@@ -7,10 +7,10 @@
     <link href="CSS/StyleFrmSugerencias.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    <h1>Formulario de Sugerencias</h1>
-    <p>Por favor, déjanos tus sugerencias:</p>
     
-    <form action="ProcesaForms.php" method="POST">
+    <form class="form" action="ProcesaForms.php" method="POST">
+        <h1 class="form_title">Formulario de Sugerencias</h1>
+        <p class="form_paragraph">Por favor, déjanos tus sugerencias:</p>
         <div class="form_container">
           
             <input type="text" id="nombre" class="input" required="">   
