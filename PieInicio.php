@@ -34,15 +34,15 @@
             <div class="enlaces-importantes">
                 <h3>ENLACES IMPORTANTES</h3>
                 <hr> </hr>
-                <h4><a href="#">Libro de reclamaciones</a></h4>
+                <h4><a href="FrmReclamos.php">Libro de reclamaciones</a></h4>
                 <hr></hr>
-                <h4><a href="#">Sugerencias</a></h4>
+                <h4><a href="FrmSugerencias.php">Sugerencias</a></h4>
             </div> 
 
             <div class="Informacion">
                 <h3><strong>INFORMACIÓN</strong></h3>
                 <hr></hr>
-                <h4><strong><a href="#">Nosotros</a></strong></h4>
+                <h4><strong><a href="Nosotros.php">Nosotros</a></strong></h4>
                  <hr></hr>  
                 <h4><strong><a href="#">Nuestras tiendas</a></strong></h4>
                 <ul>
