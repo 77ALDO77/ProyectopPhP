@@ -22,7 +22,7 @@
                    <a href="Ofertas.php" class="Ofertas">Ofertas</a>
                    <a href="contactenos_ubiquenos.php" class="Contacto">Contacto</a>
                    <a href="#" class="Servicio al cliente">Servicio al cliente</a>
-                   <a href="#" class="Comunidad">Sobre nosotros</a>
+                   <a href="Nosotros.php" class="Comunidad">Sobre nosotros</a>
                
            </nav>
         </header>
