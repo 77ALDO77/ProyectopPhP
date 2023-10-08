@@ -1,6 +1,4 @@
-
-    
-    <?php include('EncabezadoInicio.php'); ?>
+ <?php include('EncabezadoInicio.php'); ?>
   
 <main><?php include('Inicio.php'); ?> </main>
     

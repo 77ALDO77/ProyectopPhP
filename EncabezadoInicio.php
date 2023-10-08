@@ -14,7 +14,7 @@
                 <img src="Imagenes/LogoTechnoGame.jpeg" alt="Logo de la compañia"/>
                 <h2 class="NombreTienda">TECHNOGAME</h2></a>
            
-           <nav  class="OpcionesEncabezado">
+           <nav class="OpcionesEncabezado">
                    <a href="index.php" class="Inicio">Inicio</a>
                    <a href="#" class="Comunidad">Comunidad</a>
                    <a href="#" class="Reservar">Reservar</a>
@@ -23,7 +23,7 @@
                    <a href="#" class="Servicio al cliente">Servicio al cliente</a>
                    <a href="Nosotros.php" class="Comunidad">Sobre nosotros</a>
                    <a href="InicioSesion.php" class="InicioSesion">
-                       <img style="width: 45px "src="Imagenes/InicioSesion.png"/></a> 
+                       <img src="Imagenes/InicioSesion.png"/></a> 
                        
            </nav>
             
