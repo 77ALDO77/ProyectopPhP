@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/DiseñoEncabezadoDePagina.css" rel="stylesheet" type="text/css"/>
     <link href="CSS/EncabezadoInicio.css" rel="stylesheet" type="text/css"/>
     <title>TECHNOGAME</title>
     
@@ -23,8 +22,11 @@
                    <a href="contactenos_ubiquenos.php" class="Contacto">Contacto</a>
                    <a href="#" class="Servicio al cliente">Servicio al cliente</a>
                    <a href="Nosotros.php" class="Comunidad">Sobre nosotros</a>
-               
+                   <a href="InicioSesion.php" class="InicioSesion">
+                       <img style="width: 45px "src="Imagenes/InicioSesion.png"/></a> 
+                       
            </nav>
+            
         </header>
 
    

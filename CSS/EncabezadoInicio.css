@@ -1,18 +1,18 @@
+
 main{
     font-family: sans-serif; 
     margin:0;  
     background-image: url(https://www.sitew.com/images/blog/articles/site-jeux/gaming.jpeg);
 }
 
-
 header {
-     
            display: flex; 
            justify-content: space-between; 
            background-color: black;
            height: 70px;
            align-items: center; 
            padding: 10px; 
+           position: relative;
         }
         .Logo {
             display: flex; 
@@ -35,7 +35,6 @@ header {
             padding-right: 10px;
         }
         nav a:hover{
-            color:   #ffb638; 
-            
+             color:  #ffb638;
         }
-   
+  
