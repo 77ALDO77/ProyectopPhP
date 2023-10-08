@@ -6,7 +6,6 @@
     <link href="CSS/Inici.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-        
      <main class="contenedor">
                 <h1 class="nustros-productos">Nuestros Productos</h1>
                 <!--INICIO PRODUCTOS-->

@@ -10,7 +10,7 @@ footer {
             justify-content: space-around;
             flex-wrap: wrap;
         }
-
+   
         .contacto, .enlaces-importantes, .Informacion {
             flex: 1;
             text-align: left;
