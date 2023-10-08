@@ -125,9 +125,9 @@ body {
 }
 /*Estilo para preventa*/
 .contenedorpreventa {
+    max-width: 1200px;
     padding: 10px;
-    top: 50%; /* Alinea el texto en la mitad vertical del contenedor */
-    left: 30%; /* Alinea el texto en la mitad horizontal del contenedor */
+    margin: 0 auto;
     text-align: center;
 }
 .titulopreventa {

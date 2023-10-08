@@ -1,20 +1,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Tienda de Videojuegos</title>
-    <link href="css3/StyleInicio.css" rel="stylesheet" type="text/css"/>
+    <link href="CSS/StyleInicio.css" rel="stylesheet" type="text/css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <?php include('EncabezadoInicio.php'); ?>
 </head>
 <body>
-
-    <div class="contenedorproductos">
+<div class="contenedorproductos">
         <!--<h1 class="titulo">Categorías</h1>
         <!--INICIO PRODUCTOS-->
         <div class="productos">
             <!---INICIO PRODUCTO-->
             <div class="producto">
                 <div class="producto-blanco">
-                    <img src="ImagenesInicio/imagen1.jpg" alt=""/>
+                    <img src="Imagenes/ImagenesInicio/imagen1.jpg" alt=""/>
                 </div>
                 <div class="producto-informacion">
                     <p class="producto-nombre">Consolas</p>
@@ -23,7 +23,7 @@
             <!---INICIO PRODUCTO-->
             <div class="producto">
                 <div class="producto-blanco">
-                    <img src="ImagenesInicio/imagen2.jpg" alt=""/>
+                    <img src="Imagenes/ImagenesInicio/imagen2.jpg" alt=""/>
                 </div>
                 <div class="producto-informacion">
                     <p class="producto-nombre">Juegos</p>
@@ -32,7 +32,7 @@
             <!---INICIO PRODUCTO-->
             <div class="producto">
                 <div class="producto-blanco">
-                    <img src="ImagenesInicio/imagen3.jpg" alt=""/>
+                    <img src="Imagenes/ImagenesInicio/imagen3.jpg" alt=""/>
                 </div>
                 <div class="producto-informacion">
                     <p class="producto-nombre">Perifericos</p>
@@ -41,7 +41,7 @@
             <!---INICIO PRODUCTO-->
             <div class="producto">
                 <div class="producto-blanco">
-                    <img src="ImagenesInicio/imagen4.jpg" alt=""/>
+                    <img src="Imagenes/ImagenesInicio/imagen4.jpg" alt=""/>
                 </div>
                 <div class="producto-informacion">
                     <p class="producto-nombre">Sillas Gamer</p>
@@ -50,7 +50,7 @@
             <!---INICIO PRODUCTO-->
             <div class="producto">
                 <div class="producto-blanco">
-                    <img src="ImagenesInicio/imagen5.jpg" alt=""/>
+                    <img src="Imagenes/ImagenesInicio/imagen5.jpg" alt=""/>
                 </div>
                 <div class="producto-informacion">
                     <p class="producto-nombre-mando">Mandos<br>Personalizados</p>
@@ -59,7 +59,7 @@
             <!---INICIO PRODUCTO-->
             <div class="producto">
                 <div class="producto-blanco">                                           
-                    <img src="ImagenesInicio/imagen6.jpg" alt=""/>
+                    <img src="Imagenes/ImagenesInicio/imagen6.jpg" alt=""/>
                 </div>
                 <div class="producto-informacion">
                     <p class="producto-nombre">Coleccionables</p>
@@ -73,7 +73,7 @@
         <div class="productospreventa">
             <div class="productopreve">              
                     <div class="productopre-imagen">
-                    <img src="ImagenesInicio/imagenpre1.jpg" alt=""/>
+                    <img src="Imagenes/ImagenesInicio/imagenpre1.jpg" alt=""/>
                     </div>
                 <div class="productopreventa-informacion">
                     <p class="productopreventa-disponabilidad">Disponible</p>
@@ -83,7 +83,7 @@
             </div>
             <div class="productopreve">              
                     <div class="productopre-imagen">
-                    <img src="ImagenesInicio/imagenpre2.jpg" alt=""/>
+                    <img src="Imagenes/ImagenesInicio/imagenpre2.jpg" alt=""/>
                     </div>
                 <div class="productopreventa-informacion">
                     <p class="productopreventa-disponabilidad">Disponible</p>
@@ -93,7 +93,7 @@
             </div>
             <div class="productopreve">              
                     <div class="productopre-imagen">
-                        <img src="ImagenesInicio/imagenpre3.jpg" alt=""/>
+                        <img src="Imagenes/ImagenesInicio/imagenpre3.jpg" alt=""/>
                     </div>
                 <div class="productopreventa-informacion">
                     <p class="productopreventa-disponabilidad">Agotado</p>
@@ -103,7 +103,7 @@
             </div>
             <div class="productopreve">              
                     <div class="productopre-imagen">
-                    <img src="ImagenesInicio/imagenpre4.jpg" alt=""/>
+                    <img src="Imagenes/ImagenesInicio/imagenpre4.jpg" alt=""/>
                     </div>
                 <div class="productopreventa-informacion">
                     <p class="productopreventa-disponabilidad">Disponible</p>
@@ -119,7 +119,7 @@
         <div class="productosoferta">
             <div class="productofe">              
                     <div class="productofe-imagen">
-                    <img src="ImagenesInicio/imagenofe1.jpg" alt=""/>
+                    <img src="Imagenes/ImagenesInicio/imagenofe1.jpg" alt=""/>
                     </div>
                 <div class="productofe-informacion">
                     <p class="productofe-disponabilidad">Disponible</p>
@@ -132,7 +132,7 @@
             </div>
             <div class="productofe">              
                     <div class="productofe-imagen">
-                    <img src="ImagenesInicio/imagenofe2.jpg" alt=""/>
+                    <img src="Imagenes/ImagenesInicio/imagenofe2.jpg" alt=""/>
                     </div>
                 <div class="productofe-informacion">
                     <p class="productofe-disponabilidad">Disponible</p>
@@ -145,7 +145,7 @@
             </div>
             <div class="productofe">              
                     <div class="productofe-imagen">
-                        <img src="ImagenesInicio/imagenofe3.jpg" alt=""/>
+                        <img src="Imagenes/ImagenesInicio/imagenofe3.jpg" alt=""/>
                     </div>
                 <div class="productofe-informacion">
                     <p class="productofe-disponabilidad">Agotado</p>
@@ -158,7 +158,7 @@
             </div>
             <div class="productofe">              
                     <div class="productofe-imagen">
-                    <img src="ImagenesInicio/imagenofe4.jpg" alt=""/>
+                    <img src="Imagenes/ImagenesInicio/imagenofe4.jpg" alt=""/>
                     </div>
                 <div class="productofe-informacion">
                     <p class="productofe-disponabilidad">Disponible</p>
@@ -171,27 +171,6 @@
             </div>
         </div>
     </div>
-
-    <!--
-<script type="text/javascript">
-        let numpro = 0;
-        for (var i = 1; i <= 6; i++) {
-            numpro = (++numpro % 6 == 0) ? 1 : numpro;
-            movida = "flip-left";
-            if (numpro % 2 == 0) {
-                movida = "flip-up";
-            } else if (numpro % 3 == 0) {
-                movida = "zoom-in-up";
-            }
-            let prod = `
-    <div class="producto" data-aos="${movida}" data-aos-duration="1500">
-        <img src="Imagenespr/imagen${numpro}.jpg" alt=""/>
-</div>`;
-            document.write(prod);
-        }
-    </script>
-    <script type="text/javascript">
-        AOS.init();
-    </script>-->
+    <?php include('PieInicio.php'); ?>
 </body>
 </html>
