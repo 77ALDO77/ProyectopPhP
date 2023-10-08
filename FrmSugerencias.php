@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Sugerencias</title>
     <link href="CSS/EncabezadoInicio.css" rel="stylesheet" type="text/css"/>
-    <link href="CSS/PieInicio.css" rel="stylesheet" type="text/css"/>
+    <link href="CSS/PieInicio.css?uuid=<?php echo uniqid();?>" rel="stylesheet" type="text/css"/>
     <link href="CSS/StyleFrmSugerencias.css" rel="stylesheet" type="text/css"/>
     <script src="https://kit.fontawesome.com/c971f825af.js" crossorigin="anonymous"></script>
     
@@ -22,7 +22,7 @@
                 <h1 class="form_title">Formulario de Sugerencias</h1>
             </div>
 
-            <p class="form_paragraph">Agradecemos que puedas dejarnos us sugerencias</p><br><br>
+            <p class="form_paragraph">Agradecemos que puedas dejarnos tus sugerencias</p><br><br>
 
             <div class="form_container">
                 <input type="text" id="nombre" class="input" placeholder=" " required="">   
