@@ -22,8 +22,7 @@
                    <a style="font-size: 15px" href="#" class="Servicio al cliente">Servicio al cliente</a>
                    <a style="font-size: 15px" href="Nosotros.php" class="Comunidad">Sobre nosotros</a>
                    <a style="font-size: 15px" href="InicioSesion.php" class="InicioSesion">
-                       <img style=" width: 28px; margin-right: 25px; margin-left: 45px; margin-top: 20px" src="Imagenes/InicioSesion.png"/> <div STYLE="display: flex;font-size:15px;flex-direction: row-reverse;align-items: center;
-    text-align: center;text-decoration: none;margin-right: 5px">Mi Cuenta</div></a> 
+                   <img src="Imagenes/InicioSesion.png"/> <div>Mi Cuenta</div></a> 
              
                        
            </nav>
