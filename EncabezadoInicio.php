@@ -23,7 +23,10 @@
                    <a href="#" class="Servicio al cliente">Servicio al cliente</a>
                    <a href="Nosotros.php" class="Comunidad">Sobre nosotros</a>
                    <a href="InicioSesion.php" class="InicioSesion">
-                       <img src="Imagenes/InicioSesion.png"/></a> 
+                       <img src="Imagenes/InicioSesion.png"/> <div >
+                      Mi Cuenta<br>
+                    </div></a> 
+             
                        
            </nav>
             
