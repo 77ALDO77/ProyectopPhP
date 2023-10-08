@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="CSS/EncabezadoInicio.css" rel="stylesheet" type="text/css"/>
     <link href="CSS/PieInicio.css" rel="stylesheet" type="text/css"/>
-    <link href="CSS/StyleFrmReclamos.css" rel="stylesheet" type="text/css"/>
+    <link href="CSS/StyleFrmReclamos.css?uuid=<?php echo uniqid();?>" rel="stylesheet" type="text/css"/>
     <title>Libro de Reclamaciones</title>
 </head>
 <body>
