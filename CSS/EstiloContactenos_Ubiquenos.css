@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
 }
 body{
     background-image: url(https://d1di2lzuh97fh2.cloudfront.net/files/4c/4c5/4c5fs8.jpg?ph=4ab7110501);
@@ -14,21 +15,116 @@ body{
     border-radius: 15px 15px 15px 15px;
     padding: 15px;
 }
-#contenedor-cont_ubic>header{
-    height: 75%;
-    background-color: #fff;
+
+.container{
+    display: grid;
+    grid-template-columns: 510px  510px;
+    
 }
-#redesSociales h3{
+
+.title{
+    font-size: 28px;
+    font-family: "Times New Roman", sans-serif;
+    margin-left: 150px;
+    max-width: 50%;
+}
+
+.redes_titles{
     font-size: 30px;
     font-family: "Times New Roman", sans-serif;
-    margin-left: 230px;
+    margin-left: 150px;
     max-width: 50%;
 }
-#inforedes{
-    width: 50%; /* Limita el ancho al 50% de la página */
+
+
+.info_redes{
     padding: 20px;
-    max-width: 50%;
+    font-size: 18px;
+    font-family: "Times New Roman", sans-serif;
+    font-weight: bold;
 }
+.info{
+    padding: 0 !important;
+    width: 500px;
+    font-size: 18px;
+    font-family: "Times New Roman", sans-serif;
+    font-weight: bold;
+}
+
+.container_imgs{
+    display: grid;
+    left: 200px;
+    grid-template-columns: repeat(2,210px); 
+    grid-template-rows: repeat(2,210px);
+    max-width: 20%;
+    align-items: center;
+}
+
+.container_contacto{
+    display: grid ;
+    grid-template-columns: 1fr; /* Define 1 columnas */
+    grid-template-rows: 200px 150px 250px;    /* Define 3 filas */
+    justify-items: stretch;
+
+   
+}
+
+.item{
+    border-color: transparent !important;
+    margin: 0 !important;
+    justify-items: end;
+    
+
+}
+
+.cont_number{
+    display: grid;
+    grid-template-columns: 100px 200px;
+    justify-items: end;
+}
+
+.cont_mail{
+    display: grid;
+    grid-template-columns: 100px 300px;
+    justify-items: end;
+}
+
+.number{
+    padding: 15px 15px 15px 28px;
+    font-size: 25px;
+}
+
+.mail{
+    padding: 15px 0px 15px 40px;
+    font-size: 25px;
+    margin-left: 150px;
+}
+
+.info_h{
+    font-size: 30px;
+    padding: 15px 15px 15px 28px;
+    width: 500px;
+    font-size: 18px;
+    font-family: "Times New Roman", sans-serif;
+    font-weight: bold;
+}
+
+/* styles.css */
+.enlace-imagen {
+    display: inline-block; /* Hace que el enlace se comporte como un bloque en línea */
+    border-radius: 55%; /* Aplica un radio de borde para hacer la imagen circular */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que esté fuera del círculo */
+    width: 200px; /* Ajusta el ancho de la imagen */
+    height: 200px; /* Ajusta la altura de la imagen */
+    border: 2px solid black; /* Agrega un borde negro de 2 píxeles alrededor de la imagen circular */
+}
+
+.enlace-imagen img {
+    width: 100%; /* Ajusta el tamaño de la imagen al tamaño del enlace */
+    height: 100%; /* Ajusta el tamaño de la imagen al tamaño del enlace */
+}
+
+
 #contacto h1{
     font-size: 40px;
     font-weight: 500;
@@ -50,116 +146,13 @@ body{
     margin-top: 5px; /* Ajusta la distancia entre la palabra y el subrayado */
     margin-bottom: 10px;
 }
-#imagredes1 img,
-#imagredes2 img {
-    border: 2px solid #000; /* Borde sólido de 2 píxeles de grosor y color negro */
-    border-radius: 15%; /* Hace que las imágenes sean círculos */
-    margin-top: 15px;
-    margin-left: 55px;
-    max-width: 50%;
-}
-#telefono{
-    position: absolute;
-    margin-right: 20px;
-    font-size: 30px;
-    top: 0;
-    margin-top: 155px;
-    margin-left: 910px;
-}
-#infotelefono {
-    position: absolute;
-    margin-right: 20px;
-    font-size: 30px;
-    top: 0;
-    margin-top: 320px;
-    margin-left: 880px;
-}
-#infotelefono2 {
-    position: absolute;
-    font-size: 20px;
-    top: 0;
-    margin-top: 210px;
-    margin-right: 330px;
-    right: 0; /* Alinea el elemento a la derecha de su contenedor */
-    width: 30%; /* Limita el ancho al 50% de la página */
-    max-width: 30%; /* Limita el ancho máximo al 50% */
-}
-#horario {
-    position: absolute;
-    margin-right: 20px;
-    font-size: 30px;
-    top: 0;
-    margin-top: 385px;
-    margin-left: 910px;
-}
-#infohorario{
-    position: absolute;
-    font-size: 20px;
-    top: 0;
-    margin-top: 425px;
-    margin-right: 330px;
-    right: 0; /* Alinea el elemento a la derecha de su contenedor */
-    width: 30%; /* Limita el ancho al 50% de la página */
-    max-width: 30%;
-}
-#infohorario2{
-    position: absolute;
-    margin-right: 20px;
-    font-size: 25px;
-    top: 0;
-    margin-top: 510px;
-    margin-left: 780px;
-}
-#correo {
-    position: absolute;
-    margin-right: 20px;
-    font-size: 30px;
-    top: 0;
-    margin-top: 570px;
-    margin-left: 830px;
-}
-#infocorreo {
-    position: absolute;
-    margin-right: 20px;
-    font-size: 30px;
-    top: 0;
-    margin-top: 735px;
-    margin-left: 825px;
-}
-#infocorreo2 {
-    position: absolute;
-    font-size: 20px;
-    top: 0;
-    margin-top: 625px;
-    margin-right: 330px;
-    right: 0; /* Alinea el elemento a la derecha de su contenedor */
-    width: 30%; /* Limita el ancho al 50% de la página */
-    max-width: 30%; /* Limita el ancho máximo al 50% */
-}
-p{
-    margin: 0;
-}
-#LogoTelefono{
-    position: absolute;
-    margin-right: 20px;
-    font-size: 30px;
-    top: 0;
-    margin-top: 305px;
-    margin-left: 810px;
-}
-#LogoCorreo {
-    position: absolute;
-    margin-right: 20px;
-    font-size: 30px;
-    top: 0;
-    margin-top: 720px;
-    margin-left: 760px;
-}
+
 .fijarCaja{
     clear: both;
 }
 #Contenedor-tiendas {
-    width: 1200px; 
+    width: 1000px;
+    left: 20px;
     margin: 40px auto; 
     padding: 10px;
     border: 1px solid #ccc; 
@@ -206,15 +199,11 @@ p{
     clear: both;
 }
 
-.tienda h3 {
-    margin: 0;
-}
-
 .tienda p {
     margin: 0;
     font-size: 14px; /* Tamaño de fuente más pequeño para la descripción */
 }
 #mapa {
     width: 70%;
-    margin-left: 400px;
+    margin-left: 350px;
 }
