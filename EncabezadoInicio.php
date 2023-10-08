@@ -9,10 +9,10 @@
 </head>
 <body>
        <header class="Encabezado">
-           <a href="#" class="Logo">
+           <a href="index.php" class="Logo">
                 <img src="Imagenes/LogoTechnoGame.jpeg" alt="Logo de la compañia"/>
                 <h2 class="NombreTienda">TECHNOGAME</h2></a>
-           
+  
            <nav class="OpcionesEncabezado">
                    <a style="font-size: 15px" href="index.php" class="Inicio">Inicio</a>
                    <a style="font-size: 15px" href="#" class="Comunidad">Comunidad</a>
