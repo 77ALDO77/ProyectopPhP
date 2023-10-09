@@ -6,126 +6,16 @@
 body{
     background-image: url(https://d1di2lzuh97fh2.cloudfront.net/files/4c/4c5/4c5fs8.jpg?ph=4ab7110501);
 }
-
+/* Estilo de contenedor Redes sociales(derecha)*/
 #contenedor-cont_ubic{
-    width: calc(70%);
-    margin: 20px auto;
-    border: 1px solid #fff;
+    max-width: 65%;
+    margin: 0 auto;
     background-color: #fff;
     border-radius: 15px 15px 15px 15px;
     padding: 15px;
 }
 
-.container{
-    display: grid;
-    grid-template-columns: 510px  510px;
-    
-}
-
-.title{
-    font-size: 28px;
-    font-family: "Times New Roman", sans-serif;
-    margin-left: 150px;
-    max-width: 50%;
-}
-
-.redes_titles{
-    font-size: 30px;
-    font-family: "Times New Roman", sans-serif;
-    margin-left: 150px;
-    max-width: 50%;
-}
-
-
-.info_redes{
-    padding: 20px;
-    font-size: 18px;
-    font-family: "Times New Roman", sans-serif;
-    font-weight: bold;
-}
-.info{
-    padding: 0 !important;
-    width: 500px;
-    font-size: 18px;
-    font-family: "Times New Roman", sans-serif;
-    font-weight: bold;
-}
-
-.container_imgs{
-    display: grid;
-    left: 200px;
-    grid-template-columns: repeat(2,210px); 
-    grid-template-rows: repeat(2,210px);
-    max-width: 20%;
-    align-items: center;
-}
-
-.container_contacto{
-    display: grid ;
-    grid-template-columns: 1fr; /* Define 1 columnas */
-    grid-template-rows: 200px 150px 250px;    /* Define 3 filas */
-    justify-items: stretch;
-
-   
-}
-
-.item{
-    border-color: transparent !important;
-    margin: 0 !important;
-    justify-items: end;
-    
-
-}
-
-.cont_number{
-    display: grid;
-    grid-template-columns: 100px 200px;
-    justify-items: end;
-}
-
-.cont_mail{
-    display: grid;
-    grid-template-columns: 100px 300px;
-    justify-items: end;
-}
-
-.number{
-    padding: 15px 15px 15px 28px;
-    font-size: 25px;
-}
-
-.mail{
-    padding: 15px 0px 15px 40px;
-    font-size: 25px;
-    margin-left: 150px;
-}
-
-.info_h{
-    font-size: 30px;
-    padding: 15px 15px 15px 28px;
-    width: 500px;
-    font-size: 18px;
-    font-family: "Times New Roman", sans-serif;
-    font-weight: bold;
-}
-
-/* styles.css */
-.enlace-imagen {
-    display: inline-block; /* Hace que el enlace se comporte como un bloque en línea */
-    border-radius: 55%; /* Aplica un radio de borde para hacer la imagen circular */
-    overflow: hidden; /* Oculta cualquier parte de la imagen que esté fuera del círculo */
-    width: 200px; /* Ajusta el ancho de la imagen */
-    height: 200px; /* Ajusta la altura de la imagen */
-    border: 2px solid black; /* Agrega un borde negro de 2 píxeles alrededor de la imagen circular */
-}
-
-.enlace-imagen img {
-    width: 100%; /* Ajusta el tamaño de la imagen al tamaño del enlace */
-    height: 100%; /* Ajusta el tamaño de la imagen al tamaño del enlace */
-}
-
-
-#contacto h1{
+#contacto h2{
     font-size: 40px;
     font-weight: 500;
     color: #ccc;
@@ -143,44 +33,125 @@ body{
     display: block; /* Hace que el elemento sea un bloque */
     width: 100%; /* Ancho completo del contenedor #contacto */
     border-bottom: 2px solid #000; /* Establece un subrayado de 2 píxeles de grosor en negro */
-    margin-top: 5px; /* Ajusta la distancia entre la palabra y el subrayado */
-    margin-bottom: 10px;
+    margin: 0 auto;
+}
+.contenedoredes{
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    
+}
+.title-redes{
+    margin-top: 4%;
+    margin-left: 35%;
+}
+.info_redes{
+    padding: 20px;
+    font-size: 18px;
+    font-family: "Times New Roman", sans-serif;
+    font-weight: bold;
+}
+.info{
+    padding: 0 !important;
+    width: 500px;
+    font-size: 18px;
+    font-family: "Times New Roman", sans-serif;
+    font-weight: bold;
 }
 
-.fijarCaja{
-    clear: both;
+.contenedorimagen {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 10px;
 }
+.enlace-imagen img {
+    display: grid; /* Hace que el enlace se comporte como un bloque en lÃ­nea */
+    border-radius: 10%; /* Aplica un radio de borde para hacer la imagen circular */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que estÃ© fuera del cÃ­rculo */
+    border: 2px solid black; /* Agrega un borde negro de 2 pÃ­xeles alrededor de la imagen circular */
+    width: 90%;
+}
+
+/* Estilo de Contenedor Contactos(izquierdo)*/
+/*Estilo Contenedor Telefono*/
+.title-contacto{
+    margin-top: 4%;
+    margin-left: 40%;
+}
+.title-correo{
+    margin-top: 2%;
+    margin-left: 31%;
+}
+.contenedortelefono{
+    margin-bottom: 8%;
+    
+}
+.info-contacto{
+    padding: 20px;
+    font-size: 18px;
+    font-family: "Times New Roman", sans-serif;
+    font-weight: bold;
+}
+.telefono{
+    display: flex; /* Hace que los elementos dentro del contenedor se muestren en una línea */
+    align-items: center;
+    margin-left: 27%;
+    
+}
+.numero{
+    font-size: 23px;
+    border-bottom: 2px solid #000;
+}
+/*Estilo Contenedor Horario*/
+.contenedorhorario{
+    margin-bottom: 8%;
+}
+.horario{
+    margin-top: 5%;
+    align-items: center;
+    margin-left: 18%;
+    font-size: 20px;
+    font-family: "Times New Roman", sans-serif;
+    font-weight: bold;
+}
+/*Estilo Contenedor Correo*/
+.contenedorcorreo{
+    margin-bottom: 8%;
+}
+.correo{
+    margin-top: 6%;
+    display: flex;
+    align-items: center;
+    margin-left: 17%;
+}
+.mail{
+    font-size: 23px;
+    border-bottom: 2px solid #000;
+}
+/* Estilo Contenedor Tiendas*/
 #Contenedor-tiendas {
-    width: 1000px;
-    left: 20px;
-    margin: 40px auto; 
+    margin-top: 2%;
+    position: absolute;
+    left: 17.5%;
+    width: 65%;
+    display: grid;
     padding: 10px;
-    border: 1px solid #ccc; 
-    background-color: #f9f9f9; 
+    background-color: #f9f9f9;
     overflow-y: auto;
-    box-sizing: border-box;
-    clear: both;
-    background-image: url(https://d1di2lzuh97fh2.cloudfront.net/files/4c/4c5/4c5fs8.jpg?ph=4ab7110501);
+    border-radius: 15px 15px 15px 15px;
 }
 #titulotiendas{
-    background-color: #e0e0e0; /* Color de fondo para el título */
-    padding: 20px; /* Espaciado interno */
-    width: 100%; /* Ocupa el 100% del ancho del contenedor */
-    box-sizing: border-box; /* Incluye el espaciado en el ancho total */
-    margin: 0; /* Elimina el margen predeterminado del encabezado */
+    background-color: #e0e0e0; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    margin: 0; 
     color: #fff;
     display: block;
-    border-bottom: 2px solid #000; /* Línea de borde inferior */
+    border-bottom: 2px solid #000; 
     background-color: #221b1b;
 }
-
-#Listatiendas {
-    margin-top: 20px;
-    list-style-type: none; /* Elimina los puntos de lista */
-    padding: 0;
-}
-
-#Listatiendas li {
+#Listatiendas li{
     background-color: #e0e0e0;
     padding: 20px;
     width: 30%;
@@ -188,6 +159,8 @@ body{
     box-sizing: border-box; 
     float: left; 
     clear: both;
+    border: 1px solid #000;
+    cursor: pointer;
 }
 .tienda {
     background-color: #e0e0e0;
@@ -200,10 +173,12 @@ body{
 }
 
 .tienda p {
-    margin: 0;
-    font-size: 14px; /* Tamaño de fuente más pequeño para la descripción */
+    margin: 0 auto;
+    font-size: 14px; 
 }
-#mapa {
-    width: 70%;
-    margin-left: 350px;
+.tienda:hover{
+                transform: scale(1.08,1.08);
+            }
+#mapa-plaza-norte {
+    margin: 0 auto;
 }
