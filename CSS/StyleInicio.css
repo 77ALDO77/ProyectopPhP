@@ -49,6 +49,7 @@ body {
     position: relative;
     border-radius: 10px;
     cursor: pointer;
+    margin-top: 6%;
 }
 
 .producto img {
@@ -203,11 +204,12 @@ body {
     padding: 20px;
     background-color: white;
     cursor: pointer;
+    margin-bottom: 10%;
 }
 .productofe-informacion{
     border-bottom: 2px solid #000;
     color: black;
 }
 .productofe:hover{
-                transform: scale(1.08,1.08);
-            }
+    transform: scale(1.08,1.08);
+}
