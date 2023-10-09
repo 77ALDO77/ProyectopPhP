@@ -48,6 +48,7 @@ body {
     transition: 0.25s all ease-in-out;
     position: relative;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .producto img {
@@ -154,6 +155,7 @@ body {
     border: 1px solid #ffb638;
     padding: 20px;
     background-color: white;
+    cursor: pointer;
 }
 .productopreventa-informacion{
     border-bottom: 2px solid #000;
@@ -200,6 +202,7 @@ body {
     border: 1px solid #ffb638;
     padding: 20px;
     background-color: white;
+    cursor: pointer;
 }
 .productofe-informacion{
     border-bottom: 2px solid #000;

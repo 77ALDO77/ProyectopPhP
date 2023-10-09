@@ -3,13 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>sw ABC</title>
+        <title>Contactenos</title>
         <link href="CSS/EstiloContactenos_Ubiquenos.css" rel="stylesheet" type="text/css"/>
         <link href="CSS/EncabezadoInicio.css" rel="stylesheet" type="text/css"/>
-        <link href="CSS/PieInicio.css?uuid=<?php echo uniqid(); ?>" rel="stylesheet" type="text/css"/>
+        <link href="CSS/PieInicio.css" rel="stylesheet" type="text/css"/>
         <?php include('EncabezadoInicio.php'); ?> 
-
-
     </head>
     <body>
 
@@ -117,7 +115,8 @@
                                     <?php require_once './mainmapa.php' ?>
                                 </ul>
                                 </nav>
-                            </div>
+                            
+                           </main>
                             <script>
                                 // Obtén una referencia al elemento de la tienda "Plaza Norte" y al mapa de Plaza Norte.
                                 const mapaInicio = document.getElementById("mapa-inicio");
@@ -196,10 +195,10 @@
                                     mapaJockeyPlaza.style.display = "block";
                                 });
                             </script>    
-                            </main>
-
+                            </div>
+                            
                             </body>
-                            <footer>
+                            <footer class="pie-inicio">
                                 <?php include('PieInicio.php'); ?>
-                            </footer>
+                                </footer>
                             </html>

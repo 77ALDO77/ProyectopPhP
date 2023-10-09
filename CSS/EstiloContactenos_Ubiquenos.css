@@ -20,11 +20,10 @@ body{
     font-weight: 500;
     color: #ccc;
     text-shadow: 0 0 5px #cc00cc,
-    0 0 25px #cc00cc,
-    0 0 50px #cc00cc,
-    0 0 100px #cc00cc;
+        0 0 25px #cc00cc,
+        0 0 50px #cc00cc,
+        0 0 100px #cc00cc;
     letter-spacing: 5px;
-    cursor: pointer;
     text-transform: uppercase;
     transition: 1s;
 }
@@ -38,7 +37,7 @@ body{
 .contenedoredes{
     display: grid;
     grid-template-columns: 50% 50% ;
-    
+
 }
 .title-redes{
     margin-top: 4%;
@@ -85,7 +84,7 @@ body{
 }
 .contenedortelefono{
     margin-bottom: 8%;
-    
+
 }
 .info-contacto{
     padding: 20px;
@@ -97,7 +96,7 @@ body{
     display: flex; /* Hace que los elementos dentro del contenedor se muestren en una línea */
     align-items: center;
     margin-left: 27%;
-    
+
 }
 .numero{
     font-size: 23px;
@@ -135,29 +134,29 @@ body{
     position: absolute;
     left: 17.5%;
     width: 65%;
-    display: grid;
+    display: block;
     padding: 10px;
     background-color: #f9f9f9;
     overflow-y: auto;
     border-radius: 15px 15px 15px 15px;
 }
 #titulotiendas{
-    background-color: #e0e0e0; 
-    padding: 20px; 
-    box-sizing: border-box; 
-    margin: 0; 
+    background-color: #e0e0e0;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0;
     color: #fff;
     display: block;
-    border-bottom: 2px solid #000; 
+    border-bottom: 2px solid #000;
     background-color: #221b1b;
 }
 #Listatiendas li{
     background-color: #e0e0e0;
     padding: 20px;
     width: 30%;
-    margin: 10px auto; 
-    box-sizing: border-box; 
-    float: left; 
+    margin: 10px auto;
+    box-sizing: border-box;
+    float: left;
     clear: both;
     border: 1px solid #000;
     cursor: pointer;
@@ -166,18 +165,18 @@ body{
     background-color: #e0e0e0;
     padding: 0;
     width: 100%;
-    margin: 0 auto; 
-    box-sizing: border-box; 
-    float: left; 
+    margin: 0 auto;
+    box-sizing: border-box;
+    float: left;
     clear: both;
 }
 .tienda p {
     margin: 0 auto;
-    font-size: 14px; 
+    font-size: 14px;
 }
 .tienda:hover{
-                transform: scale(1.08,1.08);
-            }
-#mapa-plaza-norte {
-    margin: 0 auto;
+    transform: scale(1.08,1.08);
+}
+.pie-inicio{
+    margin-top: 40%;
 }
