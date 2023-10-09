@@ -21,7 +21,7 @@
                    <a style="font-size: 15px" href="contactenos_ubiquenos.php" class="Contacto">Contacto</a>
                    <a style="font-size: 15px" href="#" class="Servicio al cliente">Servicio al cliente</a>
                    <a style="font-size: 15px" href="Nosotros.php" class="Comunidad">Sobre nosotros</a>
-                   <a style="font-size: 15px" href="InicioSesion.php" class="InicioSesion">
+                   <a style="font-size: 15px" href="InicioSesion1.php" class="InicioSesion">
                    <img src="Imagenes/InicioSesion.png"/> <div>Mi Cuenta</div></a> 
              
                        
