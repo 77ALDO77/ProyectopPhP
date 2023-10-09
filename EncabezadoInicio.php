@@ -13,7 +13,7 @@
                 <img src="Imagenes/LogoTechnoGame.jpeg" alt="Logo de la compañia"/>
                 <h2 class="NombreTienda">TECHNOGAME</h2></a>
   
-           <nav class="OpcionesEncabezado">
+           <nav class="OpcionesEncabezado">         
                    <a style="font-size: 15px" href="index.php" class="Inicio">Inicio</a>
                    <a style="font-size: 15px" href="#" class="Comunidad">Comunidad</a>
                    <a style="font-size: 15px" href="#" class="Reservar">Reservar</a>
@@ -23,12 +23,12 @@
                    <a style="font-size: 15px" href="Nosotros.php" class="Comunidad">Sobre nosotros</a>
                    <a style="font-size: 15px" href="InicioSesion1.php" class="InicioSesion">
                    <img src="Imagenes/InicioSesion.png"/> <div>Mi Cuenta</div></a> 
-             
-                       
+               
            </nav>
             
         </header>
+           <?php include('Categorias.php'); ?>
+      
 
-   
 </body>
 </html>
