@@ -1,8 +1,4 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+
 body{
     background-image: url(https://d1di2lzuh97fh2.cloudfront.net/files/4c/4c5/4c5fs8.jpg?ph=4ab7110501);
 }
@@ -100,7 +96,7 @@ body{
 }
 .numero{
     font-size: 23px;
-    border-bottom: 2px solid #000;
+    border-bottom: 3px solid #000;
 }
 /*Estilo Contenedor Horario*/
 .contenedorhorario{
@@ -130,53 +126,28 @@ body{
 }
 /* Estilo Contenedor Tiendas*/
 #Contenedor-tiendas {
-    margin-top: 2%;
-    position: absolute;
-    left: 17.5%;
-    width: 65%;
-    display: block;
-    padding: 10px;
-    background-color: #f9f9f9;
-    overflow-y: auto;
-    border-radius: 15px 15px 15px 15px;
+    margin-bottom: 3%;
 }
 #titulotiendas{
     background-color: #e0e0e0;
     padding: 20px;
     box-sizing: border-box;
-    margin: 0;
     color: #fff;
-    display: block;
     border-bottom: 2px solid #000;
     background-color: #221b1b;
 }
 #Listatiendas li{
     background-color: #e0e0e0;
-    padding: 20px;
     width: 30%;
-    margin: 10px auto;
     box-sizing: border-box;
     float: left;
     clear: both;
     border: 1px solid #000;
     cursor: pointer;
 }
-.tienda {
-    background-color: #e0e0e0;
-    padding: 0;
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-    float: left;
-    clear: both;
-}
 .tienda p {
-    margin: 0 auto;
-    font-size: 14px;
+    font-size: 13px;
 }
 .tienda:hover{
     transform: scale(1.08,1.08);
-}
-.pie-inicio{
-    margin-top: 40%;
 }
