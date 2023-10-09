@@ -118,6 +118,7 @@
    
         </div>
     </body>
+    <foot> 
     <?php include('PieInicio.php'); ?>
     
 </html>

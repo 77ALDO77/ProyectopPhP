@@ -125,7 +125,7 @@ body {
 }
 /*Estilo para preventa*/
 .contenedorpreventa {
-    max-width: 1200px;
+    max-width: 1500px;
     padding: 10px;
     margin: 0 auto;
     text-align: center;
@@ -164,7 +164,7 @@ body {
             }
 /* Estilos para el pie de página */
 .contenedorofertas {
-    max-width: 1200px;
+    max-width: 1500px;
     padding: 10px;
     margin: 0 auto;
     text-align: center;
