@@ -15,7 +15,7 @@
   
            <nav class="OpcionesEncabezado">         
                    <a style="font-size: 15px" href="index.php" class="Inicio">Inicio</a>
-                   <a style="font-size: 15px" href="#" class="Comunidad">Comunidad</a>
+                   <a style="font-size: 15px" href="Comunidad.php" class="Comunidad">Comunidad</a>
                    <a style="font-size: 15px" href="#" class="Reservar">Reservar</a>
                    <a style="font-size: 15px" href="Ofertas.php" class="Ofertas">Ofertas</a>
                    <a style="font-size: 15px" href="contactenos_ubiquenos.php" class="Contacto">Contacto</a>
