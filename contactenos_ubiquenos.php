@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>sw ABC</title>
-        <link href="css3/EstiloContactenos_Ubiquenos.css" rel="stylesheet" type="text/css"/>
+        <link href="CSS/EstiloContactenos_Ubiquenos.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div id="contenedor-cont_ubic">
@@ -129,7 +129,7 @@
                             // Agrega un controlador de eventos para el clic en "Plaza Norte".
                             plazaNorteTienda.addEventListener("click", () => {
                                 // Muestra el mapa de Plaza Norte.
-                                mapaInicio.style.display="none";
+                                mapaInicio.style.display = "none";
                                 mapaPlazaNorte.style.display = "block";
                                 mapaMegaPlaza.style.display = "none";
                                 mapaRealPlaza.style.display = "none";
@@ -139,7 +139,7 @@
                             });
                             MegaPlazaTienda.addEventListener("click", () => {
                                 // Muestra el mapa de Plaza Norte.
-                                mapaInicio.style.display="none";
+                                mapaInicio.style.display = "none";
                                 mapaPlazaNorte.style.display = "none";
                                 mapaMegaPlaza.style.display = "block";
                                 mapaRealPlaza.style.display = "none";
@@ -149,7 +149,7 @@
                             });
                             RealPlazaTienda.addEventListener("click", () => {
                                 // Muestra el mapa de Plaza Norte.
-                                mapaInicio.style.display="none";
+                                mapaInicio.style.display = "none";
                                 mapaPlazaNorte.style.display = "none";
                                 mapaMegaPlaza.style.display = "none";
                                 mapaRealPlaza.style.display = "block";
@@ -159,7 +159,7 @@
                             });
                             MallSATienda.addEventListener("click", () => {
                                 // Muestra el mapa de Plaza Norte.
-                                mapaInicio.style.display="none";
+                                mapaInicio.style.display = "none";
                                 mapaPlazaNorte.style.display = "none";
                                 mapaMegaPlaza.style.display = "none";
                                 mapaRealPlaza.style.display = "none";
@@ -169,7 +169,7 @@
                             });
                             plazaSurTienda.addEventListener("click", () => {
                                 // Muestra el mapa de Plaza Norte.
-                                mapaInicio.style.display="none";
+                                mapaInicio.style.display = "none";
                                 mapaPlazaNorte.style.display = "none";
                                 mapaMegaPlaza.style.display = "none";
                                 mapaRealPlaza.style.display = "none";
@@ -179,7 +179,7 @@
                             });
                             jockeyplazaTienda.addEventListener("click", () => {
                                 // Muestra el mapa de Plaza Norte.
-                                mapaInicio.style.display="none";
+                                mapaInicio.style.display = "none";
                                 mapaPlazaNorte.style.display = "none";
                                 mapaMegaPlaza.style.display = "none";
                                 mapaRealPlaza.style.display = "none";
