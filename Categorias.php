@@ -88,8 +88,16 @@
                     msj= msj.concat(str1);
                     
                     for ( j = 0; j<catSec[i].length ; j++) {
+                        
+                        var linkTeclados="";
+                        if(catSec[i][j]=="Teclados"){
+                            linkTeclados="CatTeclados.php";      
+                        }else{
+                            linkTeclados="#";
+                        }
+                        
                         str2=`<li class="el-second">
-                                    <a href="#">${catSec[i][j]}</a>
+                                    <a href="${linkTeclados}">${catSec[i][j]}</a>
                                     <ul class="ul-third">`;
                         msj= msj.concat(str2);
                         
