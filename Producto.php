@@ -5,12 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Producto - Tienda en línea</title>
         <link href="CSS/estilo-Producto.css" rel="stylesheet" type="text/css"/>
+        <?php include('EncabezadoInicio.php'); ?> 
     </head>
     <body>
 
         <div class="product-container">
             <div class="product-image">
-                <img src="Imagenes_Prdct/image1.jpg" alt=""/>
+                <img src="Imagenes/Imagenes_Prdct/image1.jpg" alt=""/>
             </div>
             <div class="product-details">
                 <h2>Razer Huntsman Mini Mecánico Chroma Teclado - Blanco</h2>
@@ -110,8 +111,6 @@
                 event.currentTarget.classList.add('active');
             }
         </script>
-
-
-
     </body>
+    <?php include('PieInicio.php'); ?>
 </html>
