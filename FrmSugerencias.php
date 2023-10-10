@@ -9,8 +9,10 @@
     <link href="CSS/PieInicio.css?uuid=<?php echo uniqid();?>" rel="stylesheet" type="text/css"/>
     <link href="CSS/StyleFrmSugerencias.css" rel="stylesheet" type="text/css"/>
     
-    <!<!-- Para las ventanas emergentes -->
+    <!<!-- Para los iconos -->
     <script src="https://kit.fontawesome.com/c971f825af.js" crossorigin="anonymous"></script>
+    
+    <!<!-- Para las ventanas emergentes -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.31/sweetalert2.min.js" integrity="sha512-dbgWBkIauIf3iy96dqgzBD9ysKHp7mAuym+V7AqaNIuICxDBVm6nzvl1Yi+rdfnh25SdmYDw2JbFk/FOXf6Ycg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.31/sweetalert2.min.css" integrity="sha512-IScV5kvJo+TIPbxENerxZcEpu9VrLUGh1qYWv6Z9aylhxWE4k4Fch3CHl0IYYmN+jrnWQBPlpoTVoWfSMakoKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
