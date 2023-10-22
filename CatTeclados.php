@@ -75,16 +75,18 @@
                     prod=`<div class="product">
                                 <div class="productImg" data-aos="${movida}" data-aos-duration="500">
                                     <a href="${detalleProd}">
-                                    <img src="Imagenes/ImgTeclados/${teclados[i]}.png" alt=""/>
+                                        <div class="image">
+                                            <img src="Imagenes/ImgTeclados/${teclados[i]}.png" alt=""/>
+                                        </div>
                                     </a>
                                 </div>
                                 <div class="productInfo">
                                     <div><span class="status">Disponible</span></div>
-                                    <div><a class="productName" href="#">${nombreProduct[i]}</a></div>
+                                    <div><p class="productName">${nombreProduct[i]}</p></div>
                                     <div class="rating">${rating()}</div>
                                     <div><span class="price">${precioProduct[i]}</span></div>
                                 </div>        
-                              </div>`;
+                          </div>`;
         
                     
                     document.write(prod);
