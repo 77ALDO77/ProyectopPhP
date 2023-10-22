@@ -7,18 +7,32 @@
 }
 
 .product{
+
     align-content: center;
     border: 0.5px solid #000000;
-    padding: 0.5em;
-    height: 45vh;
     box-shadow: 0px 0px 10px #000000;
     border-radius: 10px;
     transition: 0.25s all ease-in-out;
     
 }
+.productImg{
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
 .productImg img{
-    height: 80%;
-    width: 80%;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+
+}
+.productInfo{
+    padding:0px 0px 0px 10px;
+    width: 300px;
+    display: block;
 }
 
 .status, .price{
@@ -26,33 +40,45 @@
     font-size: 25px;
 }
 
-.productName{
-  text-decoration: none; /* Quitar el subrayado */
-  color: #000000; /* Cambiar el color del texto si es necesario */
-  font-size: 20px;
-     white-space: nowrap; /* Evitar el ajuste de texto al siguiente renglón */
-    overflow: hidden; /* Ocultar el texto que no cabe */
-    text-overflow: ellipsis; /* Mostrar puntos suspensivos (...) si el texto es demasiado largo */
-}
-
 .rating{
     display: flex;
 }
 
+.productName{
+    text-decoration: none; /* Quitar el subrayado */
+    color: #000000; /* Cambiar el color del texto si es necesario */
+    font-size: 20px;
+    white-space: normal; /* Evitar el ajuste de texto al siguiente renglón */
+    overflow: hidden; /* Ocultar el texto que no cabe */
+    text-overflow: ellipsis; /* Mostrar puntos suspensivos (...) si el texto es demasiado largo */
+    width: 100%;
+}
 
+.image::before {
+  padding:0px 0px 0px 10px;
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el efecto hover */
+  opacity: 0; /* Inicialmente, el fondo es invisible */
+  transition: opacity 0.3s; /* Transición de la opacidad */
+  z-index: 1; /* Coloca el fondo detrás de la imagen */
+}
+
+.image:hover::before{
+  opacity: 0.25; /* Muestra el fondo al pasar el cursor sobre el contenedor */
+}
+
+/* Configuraciones para modificar el fondo en patanllas <768px */
 @media(max-width : 768px){
     body{
-        background-color: #3399ff;
+        background-color: #d7ebf9;
+    }
+    .product{
+        background-color: #ffffff;
     }
     .productImg{
         width: 40vw;
     }
 }
-
-
-.product:hover{
-    background-color: #e0e0e0;
-    transition: 0.30s all ease-in-out;
-    transform: scale(1.02, 1.02);
-}
-
