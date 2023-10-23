@@ -35,7 +35,6 @@
                 <h4><a href="FrmReclamos.php">Libro de reclamaciones</a></h4>
                 <hr></hr>
                 <h4><a href="FrmSugerencias.php">Sugerencias</a></h4>
-                <h4><a href="PreguntasFrecuentes.php">Preguntas frecuentes</a></h4>
             </div> 
 
             <div class="Informacion">
@@ -55,7 +54,7 @@
                 <hr></hr>
                 <h4><strong><a href="#">¿Cómo comprar?</a></strong></h4>
                 <hr></hr>
-                <h4><strong><a href="#">Preguntas frecuentes</a></strong></h4>
+                <h4><strong><a href="PreguntasFrecuentes.php">Preguntas frecuentes</a></strong></h4>
             </div>
         </div>
         
