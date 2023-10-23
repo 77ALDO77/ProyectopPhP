@@ -5,8 +5,6 @@
         <meta charset="UTF-8">
         <title>Comunidad</title>
         <link href="CSS/EstiloComunidad.css" rel="stylesheet" type="text/css"/>
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <?php include('EncabezadoInicio.php'); ?>
     </head>
     <body>
