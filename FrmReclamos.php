@@ -90,13 +90,21 @@
                 <div class="form_container">
                     <input type="text" id="pedido" class="input" placeholder=" " required="">   
                     <label for="pedido" class="label"><i class="fa-solid fa-phone"></i> Pedido:</label>
+                    <br>
+                    <span class="info-foto">Envia aqui información adicional</span>
+                    <br>
+                    <label for="foto">Foto</label>
+                    <input id="foto" type="file" name="foto" accept=".png,.jpg"
+                           onchange="MostrarImagen()" />
+                    <img id="SelectedImg" src="" alt=""/>
                 </div>
 
                 
             </fieldset><br>
             
- 
-
+         
+            
+            
             <div class="btnRow">
                 
                 <button class="btn"><i class="fa-solid fa-share"><span></span>
@@ -108,6 +116,24 @@
             </div>
             
         </form>
+        
+        <script>
+            function MostrarImagen(){
+                const input=document.getElementById('foto');
+                const imagen=document.getElementById('SelectedImg');
+                if(input.files && input.files[0]){
+                    const archivo=input.files[0];
+                    const reader=new FileReader();
+                    
+                    reader.onload=function(e){imagen.src=e.target.result;};
+                    reader.readAsDataURL(archivo);
+                }else{
+                    imagen.src="";
+                }
+                
+            }
+        </script>  
+        
     </main>
     
     
