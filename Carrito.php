@@ -1,12 +1,16 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <title>Carrito de Compra</title>
         <link href="CSS/StyleCarrito.css" rel="stylesheet" type="text/css"/>
-        <?php include('EncabezadoInicio.php'); ?>
+       <?php include('EncabezadoInicio.php'); ?>
     </head>
+
     <body>
+        
         <div class="container">
+            
             <h2 class="title-carro">CARRITO DE COMPRA</h2>
             <div class="container-carro">
                 <div class="articulos-carro">
@@ -34,5 +38,6 @@
             
         </div>
     </body>
-    <?php include('PieInicio.php'); ?>
+   <?php include('PieInicio.php'); ?>
+
 </html>
