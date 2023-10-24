@@ -10,12 +10,10 @@
         <script src="https://kit.fontawesome.com/c971f825af.js" crossorigin="anonymous"></script>
    
     </head>
-        <?php include('EncabezadoInicio.php'); ?>
     <body>
             
+        <?php include('EncabezadoInicio.php'); ?>
         <div class="productContainer">
-            <script type="text/javascript">
-            </script>
             
             <script type="text/javascript">
                 
