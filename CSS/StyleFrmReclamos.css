@@ -114,6 +114,11 @@ textarea:valid~label
     transition: .3s;
 }
 
+.info-foto{
+               display: block;
+            text-align: left;
+}
+
 .btn:hover span{
     left: -10%;
 
