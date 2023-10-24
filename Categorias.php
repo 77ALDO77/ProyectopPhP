@@ -89,15 +89,19 @@
                     
                     for ( j = 0; j<catSec[i].length ; j++) {
                         
-                        var linkTeclados="";
-                        if(catSec[i][j]=="Teclados"){
-                            linkTeclados="CatTeclados.php";      
-                        }else{
-                            linkTeclados="#";
-                        }
-                        
+                        var link="";
+                        switch(catSec[i][j]){
+                            case "Teclados":
+                                link="CatTeclados.php";
+                                break;
+                            case "Consolas":
+                                link="CatConsolas.php";
+                                break;
+                            default:
+                                link="#";
+                        }                     
                         str2=`<li class="el-second">
-                                    <a href="${linkTeclados}">${catSec[i][j]}</a>
+                                    <a href="${link}">${catSec[i][j]}</a>
                                     <ul class="ul-third">`;
                         msj= msj.concat(str2);
                         
