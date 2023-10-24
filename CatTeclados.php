@@ -14,12 +14,7 @@
             
         <?php include('EncabezadoInicio.php'); ?>
         <div class="productContainer">
-<<<<<<< HEAD
-            
-=======
-            <script type="text/javascript">
-            </script>
->>>>>>> 52edd5ce25ee69283bd02f65ee03c09eebe8b32f
+
             <script type="text/javascript">
                 
                 function rating(){
