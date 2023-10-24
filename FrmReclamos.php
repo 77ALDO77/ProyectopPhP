@@ -90,14 +90,9 @@
                 <div class="form_container">
                     <input type="text" id="pedido" class="input" placeholder=" " required="">   
                     <label for="pedido" class="label"><i class="fa-solid fa-phone"></i> Pedido:</label>
-                    <br>
-                    <span class="info-foto">Envia aqui información adicional</span>
-                    <br>
-                    <label for="foto">Foto</label>
-                    <input id="foto" type="file" name="foto" accept=".png,.jpg"
-                           onchange="MostrarImagen()" />
-                    <img id="SelectedImg" src="" alt=""/>
                 </div>
+                <span class="info-foto">Envia aqui información adicional</span>
+                <br>
                 <div class="form_container">
                     <input type="text" id="pedido" class="input" placeholder=" " required="">   
                     <label for="pedido" class="label"><i class="fa-solid fa-phone"></i> Pruebas:
