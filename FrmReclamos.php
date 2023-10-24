@@ -96,8 +96,10 @@
                 <div class="form_container">
                     <input type="text" id="pedido" class="input" placeholder=" " required="">   
                     <label for="pedido" class="label"><i class="fa-solid fa-phone"></i> Pruebas:
-                        <input id="foto" type="file" name="Foto"  accept=".png,.jpg" onchange=""/>
+                        <input id="foto" type="file" name="Foto"  accept=".png,.jpg" 
+                               onchange="MostrarImagen()"/>
                     </label>
+                        <img id="SelectedImg" src="" alt=""/>
                 </div>
                 
             </fieldset><br>
