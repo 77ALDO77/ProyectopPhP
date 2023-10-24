@@ -3,8 +3,8 @@
         <meta charset="UTF-8">
         <title>Carrito de Compra</title>
         <link href="CSS/StyleCarrito.css" rel="stylesheet" type="text/css"/>
+        <?php include('EncabezadoInicio.php'); ?>
     </head>
-    <?php include('EncabezadoInicio.php'); ?>
     <body>
         <div class="container">
             <h2 class="title-carro">CARRITO DE COMPRA</h2>
@@ -31,6 +31,7 @@
                 <div class="btncomprar">COMPRAR</div>
                 <div class="btnseguircomprando">SEGUIR COMPRANDO</div>
             </div>
+            
         </div>
     </body>
     <?php include('PieInicio.php'); ?>

@@ -23,7 +23,7 @@
                    <a style="font-size: 15px" href="Nosotros.php" class="Comunidad">Sobre nosotros</a>
                    <a style="font-size: 15px" href="InicioSesion1.php" class="InicioSesion">
                    <img src="Imagenes/InicioSesion.png"/> <div>Mi Cuenta</div></a> 
-                   <a style="font-size: 15px" href="#" class="CarroCompra">
+                   <a style="font-size: 15px" href="Carrito.php" class="CarroCompra">
                    <img src="Imagenes/ImagenEncabezado/CarroCompra (2).png"/><div>Su Carrito</div> </a>
                  
            </nav>
