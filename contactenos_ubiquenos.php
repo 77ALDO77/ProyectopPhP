@@ -120,8 +120,7 @@
                 </div>
             </div>
         <?php include('PieInicio.php'); ?>
-        <script>
-            // Obtén una referencia al elemento de la tienda "Plaza Norte" y al mapa de Plaza Norte.
+        <script type="text/javascript">
             const mapaInicio = document.getElementById("mapa-inicio");
             const plazaNorteTienda = document.getElementById("plaza-norte");
             const mapaPlazaNorte = document.getElementById("mapa-plaza-norte");
@@ -135,8 +134,6 @@
             const mapaPlazaSur = document.getElementById("mapa-plaza-sur");
             const jockeyplazaTienda = document.getElementById("jockey-plaza");
             const mapaJockeyPlaza = document.getElementById("mapa-jockey-plaza");
-
-            // Agrega un controlador de eventos para el clic en "Plaza Norte".
             plazaNorteTienda.addEventListener("click", () => {
                 // Muestra el mapa de Plaza Norte.
                 mapaInicio.style.display = "none";
@@ -148,7 +145,7 @@
                 mapaJockeyPlaza.style.display = "none";
             });
             MegaPlazaTienda.addEventListener("click", () => {
-                // Muestra el mapa de Plaza Norte.
+                // Muestra el mapa de Mega Plaza.
                 mapaInicio.style.display = "none";
                 mapaPlazaNorte.style.display = "none";
                 mapaMegaPlaza.style.display = "block";
@@ -158,7 +155,7 @@
                 mapaJockeyPlaza.style.display = "none";
             });
             RealPlazaTienda.addEventListener("click", () => {
-                // Muestra el mapa de Plaza Norte.
+                // Muestra el mapa de RealPlaza
                 mapaInicio.style.display = "none";
                 mapaPlazaNorte.style.display = "none";
                 mapaMegaPlaza.style.display = "none";
@@ -168,7 +165,7 @@
                 mapaJockeyPlaza.style.display = "none";
             });
             MallSATienda.addEventListener("click", () => {
-                // Muestra el mapa de Plaza Norte.
+                // Muestra el mapa de MallSA
                 mapaInicio.style.display = "none";
                 mapaPlazaNorte.style.display = "none";
                 mapaMegaPlaza.style.display = "none";
@@ -178,7 +175,7 @@
                 mapaJockeyPlaza.style.display = "none";
             });
             plazaSurTienda.addEventListener("click", () => {
-                // Muestra el mapa de Plaza Norte.
+                // Muestra el mapa de plaza Sur
                 mapaInicio.style.display = "none";
                 mapaPlazaNorte.style.display = "none";
                 mapaMegaPlaza.style.display = "none";
@@ -188,7 +185,7 @@
                 mapaJockeyPlaza.style.display = "none";
             });
             jockeyplazaTienda.addEventListener("click", () => {
-                // Muestra el mapa de Plaza Norte.
+                // Muestra el mapa de JockeyPlaza
                 mapaInicio.style.display = "none";
                 mapaPlazaNorte.style.display = "none";
                 mapaMegaPlaza.style.display = "none";

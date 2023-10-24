@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Producto - Tienda en línea</title>
         <link href="CSS/estilo-Producto.css" rel="stylesheet" type="text/css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <?php include('EncabezadoInicio.php'); ?> 
     </head>
     <body>
@@ -24,7 +25,7 @@
                     <li>SKU 1080535</li>
                     <!-- Agrega más características si es necesario -->
                 </ul>
-                <button>Comprar ahora</button>
+                <button id="comprar-btn">Comprar ahora</button>
             </div>
 
         </div>
@@ -110,6 +111,27 @@
                 document.getElementById(tabName).style.display = 'block';
                 event.currentTarget.classList.add('active');
             }
+        </script>
+        <script>
+            // Cuando se hace clic en el botón "Comprar ahora"
+            $(document).ready(function () {
+                $("#comprar-btn").click(function () {
+                    var nombreProducto = "Razer Huntsman Mini Mecánico Chroma Teclado - Blanco";
+                    var precioProducto = "S/499.90";
+                    var descripcionProducto = "Ingrese a una nueva dimensión mortal con el Razer Huntsman Mini, un teclado para juegos al 60 % con interruptores ópticos Razer de última generación.";
+
+                    // Crea un nuevo elemento de lista con los detalles del producto
+                    var nuevoProducto = $("<li>").text(nombreProducto + " - " + precioProducto + " - " + descripcionProducto);
+
+                    // Agrega el nuevo elemento de lista al carrito
+                    $(".articulos-carro ul").append(nuevoProducto);
+                });
+            });
+
+            // Función para eliminar un producto del carrito
+            $(document).on("click", ".articulos-carro ul li", function () {
+                $(this).remove();
+            });
         </script>
     </body>
     <?php include('PieInicio.php'); ?>

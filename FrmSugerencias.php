@@ -71,7 +71,9 @@
 
             <div class="form_container">
                 <textarea id="sugerencia" rows="4" cols="50" placeholder="" required=" "></textarea>  
-                <label for="sugerencia" class="label"><i class="fa-solid fa-comment"></i> Detalle de la Sugerencia:</label>
+                <label for="sugerencia" class="label"><i class="fa-solid fa-comment"></i> Detalle de la Sugerencia:
+                </label>
+                <input id="foto" type="file" name="Foto"  accept=".png,.jpg" onchange=""/>
             </div>
 
             <button class="btn"><i class="fa-solid fa-share"></i> Enviar</button>
