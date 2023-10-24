@@ -15,7 +15,7 @@
             <div class="container-carro">
                 <div class="articulos-carro">
                     <h2>No hay articulos seleccionados</h2>
-                    <div class="btnvolver" href="Inicio.php">VOLVER A LA PÁGINA DE INICIO</div>
+                    <a class="btnvolver" href="index.php">VOLVER A LA PÁGINA DE INICIO</a>
                 </div>
             </div>
             <div class="container-metodopago">
@@ -32,12 +32,11 @@
                 <div>Total a pagar</div>
                 <div class="precio-total">S/ 0.00</div>
                 </div>
-                <div class="btncomprar">COMPRAR</div>
-                <div class="btnseguircomprando">SEGUIR COMPRANDO</div>
+                <a class="btncomprar" href="">COMPRAR</a>
+                <a class="btnseguircomprando" href="CatTeclados.php">SEGUIR COMPRANDO</a>
             </div>
             
         </div>
     </body>
    <?php include('PieInicio.php'); ?>
-
 </html>

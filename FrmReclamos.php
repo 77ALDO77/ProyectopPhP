@@ -91,7 +91,12 @@
                     <input type="text" id="pedido" class="input" placeholder=" " required="">   
                     <label for="pedido" class="label"><i class="fa-solid fa-phone"></i> Pedido:</label>
                 </div>
-
+                <div class="form_container">
+                    <input type="text" id="pedido" class="input" placeholder=" " required="">   
+                    <label for="pedido" class="label"><i class="fa-solid fa-phone"></i> Pruebas:
+                        <input id="foto" type="file" name="Foto"  accept=".png,.jpg" onchange=""/>
+                    </label>
+                </div>
                 
             </fieldset><br>
             
