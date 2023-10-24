@@ -26,7 +26,7 @@
                 },
                 {
                     question: "¿Puedo cancelar con otra divisa?",
-                    answer: "No. Todas las operaciones de TechnoGame son en dólares."
+                    answer: "No. Todas las operaciones de TechnoGame son en soles."
                 },
                 {
                     question: "¿Los precios publicados incluyen IGV?",
