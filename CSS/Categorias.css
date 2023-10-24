@@ -10,7 +10,7 @@
 
 .navCateg {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #24252a;
     padding-left: 2vw;
