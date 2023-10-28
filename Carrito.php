@@ -32,7 +32,7 @@
                 <div>Total a pagar</div>
                 <div class="precio-total">S/ 0.00</div>
                 </div>
-                <a class="btncomprar" href="">COMPRAR</a>
+                <a class="btncomprar" href="FrmPago.php">COMPRAR</a>
                 <a class="btnseguircomprando" href="CatTeclados.php">SEGUIR COMPRANDO</a>
             </div>
             

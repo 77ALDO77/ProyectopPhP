@@ -14,7 +14,7 @@
     
      <!-- CONTENIDO Formulario Reclamaciones-->
     <main>
-        <form class="form" action="ProcesaForms.php" method="POST">
+        <form class="form" method="post" action="procesaFrm.php" enctype="multipart/form-data">
         
             
             <div class="title-block">
@@ -26,27 +26,27 @@
                     <legend class="legend">Datos del consumidor reclamante</legend><br>
             
                 <div class="form_container">
-                    <input type="text" id="nombre" class="input" placeholder=" " required="">   
+                    <input type="text" id="nombre" class="input" placeholder=" " required="" name="nombre">   
                     <label for="nombre" class="label"><i class="fa-solid fa-user"></i> Nombres y Apellidos:</label>
                 </div>
 
                 <div class="form_container">
-                    <input type="text" id="domicilio" class="input" placeholder=" " required="">   
+                    <input type="text" id="domicilio" class="input" placeholder=" " required=""  name="domicilio">   
                     <label for="domicilio" class="label"><i class="fa-solid fa-envelope"></i> Domicilio:</label>
                 </div>
 
                 <div class="form_container">
-                    <input type="text" id="dni" class="input" placeholder=" " required="">   
+                    <input type="text" id="dni" class="input" placeholder=" " required=""  name="dni">   
                     <label for="dni" class="label"><i class="fa-solid fa-envelope"></i> DNI:</label>
                 </div>
 
                 <div class="form_container">
-                    <input type="email" id="email" class="input" placeholder=" " required="">   
+                    <input type="email" id="email" class="input" placeholder=" " required=""  name="email">   
                     <label for="email" class="label"><i class="fa-solid fa-envelope"></i> Correo:</label>
                 </div>
 
                 <div class="form_container">
-                    <input type="text" id="numero" class="input" placeholder=" " required="">   
+                    <input type="text" id="numero" class="input" placeholder=" " required=""  name="numero">   
                     <label for="numero" class="label"><i class="fa-solid fa-phone"></i> Celular:</label>
                 </div>
 
@@ -62,12 +62,12 @@
                 </select><br><br>
 
                 <br><div class="form_container">
-                    <input type="text" id="monto" class="input" placeholder=" " required="">   
+                    <input type="text" id="monto" class="input" placeholder=" " required=""  name="monto">   
                     <label for="monto" class="label"><i class="fa-solid fa-phone"></i> Monto Reclamado(S/.):</label>
                 </div>
 
                 <div class="form_container">
-                    <input type="text" id="descripcion" class="input" placeholder=" " required="">   
+                    <input type="text" id="descripcion" class="input" placeholder=" " required=""  name="descripcion">   
                     <label for="descripcion" class="label"><i class="fa-solid fa-phone"></i> Descripción:</label>
                 </div>
 
@@ -83,20 +83,19 @@
                 </select><br><br>
 
                 <br><div class="form_container">
-                    <input type="text" id="detalle" class="input" placeholder=" " required="">   
+                    <input type="text" id="detalle" class="input" placeholder=" " required="" name="detalle">   
                     <label for="detalle" class="label"><i class="fa-solid fa-phone"></i> Detalle:</label>
                 </div>
 
                 <div class="form_container">
-                    <input type="text" id="pedido" class="input" placeholder=" " required="">   
+                    <input type="text" id="ppedido" class="input" placeholder=" " required="" name="pedido">   
                     <label for="pedido" class="label"><i class="fa-solid fa-phone"></i> Pedido:</label>
                 </div>
                 <span class="info-foto">Envia aqui información adicional</span>
                 <br>
                 <div class="form_container">
-                    <input type="text" id="pedido" class="input" placeholder=" " required="">   
                     <label for="pedido" class="label"><i class="fa-solid fa-phone"></i> Pruebas:
-                        <input id="foto" type="file" name="Foto"  accept=".png,.jpg" 
+                        <input id="foto" type="file" name="foto"  accept=".png,.jpg" 
                                onchange="MostrarImagen()"/>
                     </label>
                         <img id="SelectedImg" src="" alt=""/>
@@ -108,10 +107,11 @@
             
             
             <div class="btnRow">
-                
+                <input type="hidden" name="accion" value="add" />
                 <button class="btn"><i class="fa-solid fa-share"><span></span>
                     
                     </i> Enviar Hoja de Reclamación</button>
+                
                 <button class="btn" onclick="window.print();"><span></span>
                     <i class="fa-solid fa-share"></i> Imprimir</button>
                 
