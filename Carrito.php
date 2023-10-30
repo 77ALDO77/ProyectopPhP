@@ -37,6 +37,9 @@
             </div>
             
         </div>
+        <script>
+            
+        </script>
     </body>
    <?php include('PieInicio.php'); ?>
 </html>

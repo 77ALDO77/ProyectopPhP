@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="CSS/EncabezadoInicio.css" rel="stylesheet" type="text/css"/>
     <title>TECHNOGAME</title>
-    
+    <style>
+        #carritoContainer {
+            position: fixed;
+        }
+    </style>
 </head>
 <body>
        <header class="Encabezado">
@@ -24,12 +28,30 @@
                    <a style="font-size: 15px" href="InicioSesion1.php" class="InicioSesion">
                    <img src="Imagenes/InicioSesion.png"/> <div>Mi Cuenta</div></a> 
                    <a style="font-size: 15px" href="Carrito.php" class="CarroCompra">
-                   <img src="Imagenes/ImagenEncabezado/CarroCompra (2).png"/><div>Su Carrito</div> </a>
+                   <img src="Imagenes/ImagenEncabezado/CarroCompra (2).png" onmouseover="cargarSlideCarrito()" onmouseleave="ocultarCarrito()"><div>Su Carrito</div> </a>
            </nav>
-            
         </header>
-           <?php include('Categorias.php'); ?>
-      
-
+        <?php include('Categorias.php'); ?>
+    <div id="carritoContainer"></div>
+        
+    <script>
+        function cargarSlideCarrito() {
+            var carritoContainer = document.getElementById('carritoContainer');
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState === 4 && this.status === 200) {
+                    carritoContainer.innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "SlideCarrito.php", true);
+            xhttp.send();
+        }
+        
+        function ocultarCarrito() {
+            var carritoContainer = document.getElementById('carritoContainer');
+            carritoContainer.innerHTML = '';
+        }
+    </script>
+    
 </body>
 </html>
