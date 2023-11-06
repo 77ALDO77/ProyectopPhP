@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="formulario">
-        <h1>Inicio de Sesión</h1>
+        <h1>INICIO DE SESIÓN</h1>
         <form method="post">
             <div class="username">
                 <input type="text" required>
