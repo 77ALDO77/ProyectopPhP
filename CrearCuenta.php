@@ -37,7 +37,6 @@
                    <form method="post" required>
             <input class="CrearCuenta" type="submit" name="CrearCuenta" value="Crear una cuenta" formaction="#">
         </form>
-        </form>
  
     </div>
     <script>
