@@ -1,3 +1,8 @@
+<?php
+    require_once './ConectaDB.php';
+    $cn = getConexion();
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,8 +17,47 @@
     <body>
         <?php include('EncabezadoInicio.php'); ?>
         <div class="productContainer">
-
+            
+            
+            
             <script type="text/javascript">
+                    
+                <?php 
+                    $sqlST="select Imagen from Productos where idCategoriaN2=3;";
+                    $result= mysqli_query($cn,$sqlST);
+                    $Productos=[];
+                    while($fila= mysqli_fetch_column($result)){  
+                        $imgs[]= $fila;
+                    }
+                ?>
+                    
+                <?php 
+                    $sqlST="select id from Productos where idCategoriaN2=3;";
+                    $result= mysqli_query($cn,$sqlST);
+                    $Productos=[];
+                    while($fila= mysqli_fetch_column($result)){  
+                        $ids[]= $fila;
+                    }
+                ?> 
+                    
+                <?php 
+                    $sqlST="select Nombre from Productos where idCategoriaN2=3;";
+                    $result= mysqli_query($cn,$sqlST);
+                    $Productos=[];
+                    while($fila= mysqli_fetch_column($result)){  
+                        $nombres[]= $fila;
+                    }
+                ?>
+                    
+                <?php 
+                    $sqlST="select Precio from Productos where idCategoriaN2=3;";
+                    $result= mysqli_query($cn,$sqlST);
+                    $Productos=[];
+                    while($fila= mysqli_fetch_column($result)){  
+                        $precios[]= $fila;
+                    }
+                ?>    
+                    
                 function rating() {
                     var rating = "";
                     var star = "<i class=\"fa-solid fa-star\"></i>";
@@ -23,31 +67,10 @@
                     return rating;
                 }
 
-                var teclados = ["H1", "H2", "H3", "H4",
-                    "L1", "L2", "L3", "L4",
-                    "R1", "R2", "R3", "R4"];
-                var idProductos = ["1", "2", "3", "4",
-                    "5", "6", "7", "8",
-                    "9", "10", "11", "12"];
-                var nombreProduct = [
-                    "Hyperx Alloy Origins 60 Teclado Mecánico - Switch Aqua",
-                    "Hyperx Alloy MKW100 Teclado Mecánico RBG - Switch RED",
-                    "HyperX Teclado Alloy Core RGB",
-                    "HyperX Teclado Alloy Origins 60 BK",
-                    "Logitech G713 TKL Aurora Teclado Mecánico RGB Lineal - Blanco",
-                    "Logitech G413 TKL Teclado Mecánico - Negro",
-                    "Logitech Mecánico G413 SE Teclado - Negro",
-                    "Logitech G Pro Teclado Mecánico - League of Legends",
-                    "Razer Huntsman V2 TKL Purple Switch Teclado - Negro",
-                    "Razer Huntsman Mini Mecánico Chroma Teclado - Blanco",
-                    "Razer Blackwidow V3 Halo Infinite Mech Teclado Green Switch",
-                    "Razer Cynosa V2 Membrana SP Chroma Black"
-                ];
-                var precioProduct = [
-                    "S/359.90", "S/289.90", "S/179.90", "S/359.90",
-                    "S/499.90", "S/279.90", "S/299.90", "S/499.90",
-                    "S/684.90", "S/499.90", "S/599.90", "S/179.90"
-                ];
+                var teclados = <?php  echo json_encode($imgs); ?>;
+                var idProductos = <?php  echo json_encode($ids); ?>;
+                var nombreProduct =<?php  echo json_encode($nombres); ?> ;
+                var precioProduct = <?php  echo json_encode($precios); ?>;
 
                 let numpro = 0;
                 var detalleProd = "";
@@ -69,7 +92,7 @@
                                 <div class="productImg" data-aos="${movida}" data-aos-duration="500">
                                     <a href="${detalleProd}">
                                         <div class="image">
-                                            <img src="Imagenes/ImgTeclados/${teclados[i]}.png" alt=""/>
+                                            <img src="Imagenes/ImgTeclados/${teclados[i]}" alt=""/>
                                         </div>
                                     </a>
                                 </div>
@@ -80,16 +103,16 @@
                                     <div><span class="price">${precioProduct[i]}</span></div>
                                 </div>
                                 <form action="Producto.php" method="post">
-    <input type="hidden" value="obtenerProducto" name="accion"/>
-    <input type="hidden" value="${idProductos[i]}" name="id"/>
-    <button class="btndetalles" type="submit">Detalles</button>
-</form>
-        <form onsubmit="agregarAlCarrito(event, ${idProductos[i]})">
-        <input type="hidden" value="agregarProductoAlCarrito" name="accion1"/>
-        <input type="hidden" value="${idProductos[i]}" name="id"/>
-        <button class="btnagregar" type="submit">Agregar al Carrito</button>
-    </form>
-                          </div>`;
+                                    <input type="hidden" value="obtenerProducto" name="accion"/>
+                                    <input type="hidden" value="${idProductos[i]}" name="id"/>
+                                    <button class="btndetalles" type="submit">Detalles</button>
+                                </form>
+                                <form onsubmit="agregarAlCarrito(event, ${idProductos[i]})">
+                                    <input type="hidden" value="agregarProductoAlCarrito" name="accion1"/>
+                                    <input type="hidden" value="${idProductos[i]}" name="id"/>
+                                    <button class="btnagregar" type="submit">Agregar al Carrito</button>
+                                </form>
+                            </div>`;
                     document.write(prod);
                 }
             </script>
