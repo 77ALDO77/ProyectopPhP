@@ -30,13 +30,14 @@ body {
 }
 
 .product-image {
-    max-width: 45%;
+    max-width: 50%;
     float: left;
 }
 
 .product-image img {
-    max-width: 100%;
-    height: auto;
+    
+    height: 500px;
+    width: 500px;
     border: 1px solid #ccc;
     border-radius: 10px;
 }

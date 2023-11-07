@@ -3,7 +3,8 @@ require_once './ConectaDB.php';
 $cnx= getConexion();
 function obtenerProducto(){
     global $cnx;
-    $cadSQL="SELECT id, nombre, precio, imagen FROM productos where id=1";
+    $id = $_POST['id'];
+    $cadSQL="SELECT id, nombre, precio, imagen FROM productos where id=$id";
     $registros= mysqli_query($cnx, $cadSQL);
     $resultado=[];
     while($row= mysqli_fetch_assoc($registros)){

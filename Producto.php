@@ -11,8 +11,8 @@
     </head>
     <body>
         <?php
-    require_once './funciones-carrito.php';
-    ?>
+        require_once './funciones-carrito.php';
+        ?>
         <?php foreach ($resultado as $producto) { ?>
             <div class="product-container">
                 <div class="item">
@@ -32,9 +32,10 @@
                     </div>
 
                     <form id="agregarProductoForm" method="post">
-    <input type="hidden" value="agregarProductoAlCarrito" name="accion1"/>
-    <button class="boton-item" type="submit">Agregar al Carrito</button>
-</form>
+                        <input type="hidden" value="agregarProductoAlCarrito" name="accion1"/>
+                        <input type="hidden" value="<?php echo $producto['id']; ?>" name="id"/>
+                        <button class="boton-item" type="submit">Agregar al Carrito</button>
+                    </form>
                 </div>
             </div>
         <?php } ?>
@@ -111,30 +112,30 @@
                 <button class="boton-item">Agregar al Carrito</button>
             </div>-->
         <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        var form = document.getElementById("agregarProductoForm");
-        form.addEventListener("submit", function(event) {
-            event.preventDefault(); // Evitar el comportamiento predeterminado de enviar el formulario
+            document.addEventListener("DOMContentLoaded", function () {
+                var form = document.getElementById("agregarProductoForm");
+                form.addEventListener("submit", function (event) {
+                    event.preventDefault(); // Evitar el comportamiento predeterminado de enviar el formulario
 
-            var formData = new FormData(form);
+                    var formData = new FormData(form);
 
-            var xhr = new XMLHttpRequest();
-            xhr.open("POST", "funciones-carrito.php", true);
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState === XMLHttpRequest.DONE) {
-                    if (xhr.status === 200) {
-                        // Manejar la respuesta del servidor si es necesario
-                        console.log(xhr.responseText);
-                    } else {
-                        // Manejar errores de la solicitud si es necesario
-                        console.error('Ha ocurrido un error');
-                    }
-                }
-            };
-            xhr.send(formData);
-        });
-    });
-</script>
+                    var xhr = new XMLHttpRequest();
+                    xhr.open("POST", "funciones-carrito.php", true);
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState === XMLHttpRequest.DONE) {
+                            if (xhr.status === 200) {
+                                // Manejar la respuesta del servidor si es necesario
+                                console.log(xhr.responseText);
+                            } else {
+                                // Manejar errores de la solicitud si es necesario
+                                console.error('Ha ocurrido un error');
+                            }
+                        }
+                    };
+                    xhr.send(formData);
+                });
+            });
+        </script>
         <script>
             function openTab(tabName) {
                 var i;
