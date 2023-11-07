@@ -74,17 +74,16 @@ $cn = getConexion();
             accordions.forEach(acco => {
                 acco.onclick = () => {
                     accordions.forEach(subAcco => {
-                        subAcco.classList.remove('active')
+                        subAcco.classList.remove('active');
                     });
                     acco.classList.add('active');
-                }
-            })
+                };
+            });
 
         </script>
 
 
     </body>
-    <foot>
         <?php include('PieInicio.php'); ?>
-    </foot>
+
 </html>
