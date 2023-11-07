@@ -16,7 +16,33 @@
         <div class="productContainer">
             
             <script type="text/javascript">
-                
+                <?php 
+                    $sqlST="select Imagen from Productos where idCategoriaN2=1;";
+                    $result= mysqli_query($cn,$sqlST);
+                    $Productos=[];
+                    while($fila= mysqli_fetch_column($result)){  
+                        $imgs[]= $fila;
+                    }
+                ?>
+                     
+                <?php 
+                    $sqlST="select Nombre from Productos where idCategoriaN2=1;";
+                    $result= mysqli_query($cn,$sqlST);
+                    $Productos=[];
+                    while($fila= mysqli_fetch_column($result)){  
+                        $nombres[]= $fila;
+                    }
+                ?>
+                    
+                <?php 
+                    $sqlST="select Precio from Productos where idCategoriaN2=1;";
+                    $result= mysqli_query($cn,$sqlST);
+                    $Productos=[];
+                    while($fila= mysqli_fetch_column($result)){  
+                        $precios[]= $fila;
+                    }
+                ?>  
+                    
                 function rating(){
                     var rating="";
                     var star="<i class=\"fa-solid fa-star\"></i>";
@@ -27,32 +53,9 @@
                     return rating;
                 }
                 
-                var consolas=["PS5_1","PS5_2","PS5_3","PS5_4",
-                              "X1","X2","PS4","SD1",
-                              "N1","N2","N3","N4"];
-                          
-                var  nombreProduct=[
-                    "PlayStation 5 Consola (ranura disco) + God of War Ragnarok",
-                    "PlayStation 5 con ranura de disco + FC 24",
-                    "PlayStation 5 Consola – Edición Spider-Man 2",
-                    "PlayStation VR2 + Horizon: Call of the Mountain",
-                    
-                    "Xbox Series X Consola 1 TB + Diablo IV", 
-                    "Xbox Series X Consola 1 TB",
-                    "PlayStation 4 Consola 1TB + God of War Ragnarok",
-                    "Steam Deck Consola Portátil - 64 GB",
-                    
-                    "Nintendo Switch OLED Consola – Edición Mario Red", 
-                    "Nintendo Switch OLED Consola - Edición Zelda Tears of the Kingdom",
-                    "Nintendo Switch Lite Consola (Azul)",
-                    "Nintendo Switch Consola (Joy-Con Rojo/Azul Neón)"
-                ];
-                
-                var precioProduct=[
-                    "S/3599.90","S/3499.90","S/3999.90","S/3899.90",
-                    "S/2899.90","S/2899.90","S/2399.90","S/3499.90",
-                    "S/2199.90","S/2099.90","S/1199.90","S/1749.90"
-                ];
+                var consolas=<?php  echo json_encode($imgs); ?>;      
+                var  nombreProduct=<?php  echo json_encode($nombres); ?>;
+                var precioProduct=<?php  echo json_encode($precios); ?>;
                 
                 let numpro=0;
                 var prod="";
@@ -70,7 +73,7 @@
                                 <div class="productImg" data-aos="${movida}" data-aos-duration="500">
                                     <a href="#">
                                         <div class="image">
-                                            <img src="Imagenes/ImgConsolas/${consolas[i]}.jpg" alt=""/>
+                                            <img src="Imagenes/ImgConsolas/${consolas[i]}" alt=""/>
                                         </div>
                                     </a>
                                 </div>
