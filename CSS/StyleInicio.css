@@ -7,7 +7,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #000;
-    color: #fff;
     background-image: url(https://d1di2lzuh97fh2.cloudfront.net/files/4c/4c5/4c5fs8.jpg?ph=4ab7110501);
 }
 /* Estilos para el contenido principal */
@@ -141,6 +140,7 @@ body {
     font-size: 36px;
     text-align: center;
     margin: 0 auto;
+    color: #fff;
 }
 .productopre-imagen{
     max-width: 100%;
@@ -181,6 +181,7 @@ body {
     font-size: 36px;
     text-align: center;
     margin: 0 auto;
+    color: #fff;
 }
 .productofe-imagen img{
     width: 280px;

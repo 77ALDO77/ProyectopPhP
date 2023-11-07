@@ -15,7 +15,6 @@
         <div class="productContainer">
 
             <script type="text/javascript">
-                
                 function rating(){
                     var rating="";
                     var star="<i class=\"fa-solid fa-star\"></i>";
@@ -68,7 +67,6 @@
                     if(nombreProduct[i]=="Razer Huntsman Mini Mecánico Chroma Teclado - Blanco"){
                          detalleProd="Producto.php";
                     }else{detalleProd="#";}
-                    
                     prod=`<div class="product">
                                 <div class="productImg" data-aos="${movida}" data-aos-duration="500">
                                     <a href="${detalleProd}">
@@ -90,7 +88,10 @@
                 }
             
             </script>
-            
+            <form action="funciones-carrito.php" method="post">
+                <input type="hidden" value="obtenerProducto" name="accion"/>
+                <button type="submit">Detalles</button>
+            </form>
         </div>  
         <script>
           AOS.init();

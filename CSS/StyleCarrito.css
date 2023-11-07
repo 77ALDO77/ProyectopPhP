@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #000;
-    color: #fff;
     background-image: url(https://d1di2lzuh97fh2.cloudfront.net/files/4c/4c5/4c5fs8.jpg?ph=4ab7110501);
 }
 .container{
@@ -17,6 +16,31 @@ body {
 .title-carro{
     text-align: center;
     font-size: 35px;
+    color: #fff;
+}
+.carrito-item{
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 15px;
+}
+.carrito-item-titulo1{
+    margin-right: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 15px;
+}
+.carrito-item-precio1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 15px;
 }
 .container-carro{
     background-color: #000;
@@ -25,6 +49,8 @@ body {
     text-align: center;
     width: 65%;
     float: left;
+    color: #fff;
+    border-bottom: 2px solid #fff;
 }
 .btnvolver{
     margin: 0 auto;
@@ -43,14 +69,19 @@ body {
     float: right;
     margin-bottom: 20px;
 }
+.articulos-carro{
+    color: #fff;
+}
 .title-metodopago{
     margin-bottom: 5%;
     border-bottom: 2px solid #fff;
     padding-bottom: 10px;
     margin-left: 10px;
+    color: #fff;
 }
 .descrip-metodopago{
     margin-left: 5px;
+        color: #fff;
 }
 .container-compra{
     background-color: #000;
@@ -66,9 +97,11 @@ body {
     border-bottom: 2px solid #fff;
     padding-bottom: 20.5px;
     margin-left: 10px;
+    color: #fff;
 }
 .precio-total{
     margin-left: 40%;
+    color: #fff;
 }
 .btncomprar{
     display:grid;
@@ -87,4 +120,7 @@ body {
     background-color: darkslategray;
     padding: 30px; 
     max-width: 70%;
+}
+.carrito-item:first-child {
+    margin-top: -250px; /* Ajusta el margen superior como desees */
 }
