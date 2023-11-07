@@ -55,7 +55,7 @@
             <fieldset>
                 <legend class="legend">Identificación del bien contratado</legend>
                 <label for="tipoBien" class="selectLbl"><i class="fa-solid fa-phone"></i> Tipo de Bien:</label><br>
-                <select id="tipoBien" class="select">
+                <select id="tipoBien" class="select" name="tipoBien">
                     <option selected="selected" value="">Seleccione</option>
                     <option value="Producto">PRODUCTO</option>
                     <option value="Servicio">SERVICIO</option>
@@ -76,7 +76,7 @@
             <fieldset>
                 <legend class="legend">Detalle de la relamación y pedido del consumidor</legend>
                 <label for="tipoReclamo" class="selectLbl"><i class="fa-solid fa-phone"></i> Tipo de Reclamación:</label><br>
-                <select id="tipoReclamo" class="select">
+                <select id="tipoReclamo" class="select" name="tipoReclamo">
                     <option selected="selected" value="">Seleccione</option>
                     <option value="Reclamo">RECLAMO</option>
                     <option value="Queja">QUEJA</option>
