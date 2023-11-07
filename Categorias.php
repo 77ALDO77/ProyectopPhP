@@ -1,3 +1,9 @@
+<?php
+    require_once './ConectaDB.php';
+    $cn = getConexion();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,18 +18,58 @@
     <main id="bodyCate">
      <nav class="navCateg">
         <ul class="cont-ul">
+            
+            <?php 
+                $sqlST="select Nombre from CategoriasN1;";
+                $result= mysqli_query($cn,$sqlST);
+                $cateN1=[];
+                while($fila= mysqli_fetch_column($result)){  
+                    $cateN1[]= $fila;
+                }
+            ?>
+            
+            <?php 
+            function obtenerCategN2($idCategN1,$cn){
+                $sqlST="select Nombre from CategoriasN2 where idCategoriaN1=".$idCategN1.";";
+                $result= mysqli_query($cn,$sqlST);
+                $cateN2=[];
+                while($fila= mysqli_fetch_assoc($result)){  
+                    $cateN2[]= $fila['Nombre'];
+                }
+                return $cateN2;
+            }
+            ?>
+
+            <?php 
+            function obtenerCategN3($idCategN2,$cn){
+                $sqlST="select Nombre from CategoriasN3 where idCategoriaN2=".$idCategN2.";";
+                $result= mysqli_query($cn,$sqlST);
+                $cateN3=[];
+                while($fila= mysqli_fetch_assoc($result)){  
+                    $cateN3[]= $fila['Nombre'];
+                }
+                return $cateN3;
+            }
+            ?>
+            
+            
+            
             <script type="text/javascript">
                 //ARRAY de todos los items y subitems del MENU
-                var catPrim=["Gaming","Funko","Colecionables","Audio","Electronica"];
-                
-                var catSec=[
-                    [ /*Gaming*/ "Consolas","Juegos","Teclados","Mando","Streaming"],
-                    [ /*Funko*/ "Funko pop","Box Collector","Pop Keychain","Peluches","Exclusivos TechnoGame"],
-                    [ /*Colecionables*/ "Banpresto","Bandai","Jakks Pacific","Chibi"],
-                    [ /*Audio*/ "Parlantes","Parlanes Gamer","Audifonos","Audifonos gamer"],
-                    [ /*Electronica*/ "Smartphones","Smartwatch","Baterias Portatiles","TV Streaming"]
-                ];
-                
+                //var catPrim=["Gaming","Funko","Colecionables","Audio","Electronica"];
+                var catPrim=<?php echo json_encode($cateN1); ?>;
+                var catSec=[];
+               <?php 
+                   $array=[];
+                   for ($i = 1; $i <= 5; $i++) {
+                        $datos_db = obtenerCategN2($i,$cn);
+                        $subarray = $datos_db;
+                        $array[] = $subarray;
+
+                        echo "catSec.push(" . json_encode($subarray) . ");\n";
+                    }
+                ?>
+                 
                 var catTerc=[
                     [ //Gaming
                         //Consolas
@@ -33,7 +79,7 @@
                         //Teclados 
                         ["HyperX","Logitech G","Razer"],
                         //Mando 
-                        ["Mando PS5","Mando PS5","Joy Con Switch"],
+                        ["Mando PS5","Mando PS4","Joy Con Switch"],
                         //Streaming 
                         ["Microfonos","CAmaras","Luces Led de colores"]
                     ],
