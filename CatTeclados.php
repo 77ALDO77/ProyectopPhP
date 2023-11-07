@@ -82,12 +82,12 @@
                                 <form action="Producto.php" method="post">
     <input type="hidden" value="obtenerProducto" name="accion"/>
     <input type="hidden" value="${idProductos[i]}" name="id"/>
-    <button type="submit">Detalles</button>
+    <button class="btndetalles" type="submit">Detalles</button>
 </form>
         <form onsubmit="agregarAlCarrito(event, ${idProductos[i]})">
         <input type="hidden" value="agregarProductoAlCarrito" name="accion1"/>
         <input type="hidden" value="${idProductos[i]}" name="id"/>
-        <button type="submit">Agregar al Carrito</button>
+        <button class="btnagregar" type="submit">Agregar al Carrito</button>
     </form>
                           </div>`;
                     document.write(prod);
