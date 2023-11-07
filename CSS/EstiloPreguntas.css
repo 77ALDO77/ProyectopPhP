@@ -1,16 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    outline: none;
-    text-decoration: none;
-}
-
 body{
     background-image: url(https://d1di2lzuh97fh2.cloudfront.net/files/4c/4c5/4c5fs8.jpg?ph=4ab7110501);
     font-family: 'Open sans', san-serif;
+    
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
 }
 
 .container{
@@ -68,6 +66,7 @@ body{
 
 .container .accordion-container .accordion .accordion-heading h3{
     font-size: 18px;
+    margin: 0px;
     ;
 }
 
