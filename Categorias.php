@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body >
-    <header2 class="bodyCate">
+<body>
+    <main id="bodyCate">
      <nav class="navCateg">
         <ul class="cont-ul">
             <script type="text/javascript">
@@ -48,7 +48,7 @@
                     ],
                     [ //Colecionables
                         //Banpresto
-                        ["Attack on Titan","Bleach","DEmon Slayer"],
+                        ["Attack on Titan","Bleach","Demon Slayer"],
                         //Bandai 
                         ["Star Wars","Disney","Saint Seiya"],
                         //Jakks Pacific
@@ -123,11 +123,8 @@
                 document.write(msj);
                 console.log(msj);
             </script>
-            
-                    
-
-    </nav>
-    </header2>
+        </nav>
+    </main>
 </body>
 
 </html>
