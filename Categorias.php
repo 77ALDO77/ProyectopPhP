@@ -69,6 +69,19 @@
                         echo "catSec.push(" . json_encode($subarray) . ");\n";
                     }
                 ?>
+                    
+//                 Por si no llega a funcionar lo que esta entre la linea 60 a la 71
+//                 usemos este fragmento comentado   
+//                var catPrim=["Gaming","Funko","Colecionables","Audio","Electronica"];
+//                
+//                var catSec=[
+//                    [ /*Gaming*/ "Consolas","Juegos","Teclados","Mando","Streaming"],
+//                    [ /*Funko*/ "Funko pop","Box Collector","Pop Keychain","Peluches","Exclusivos TechnoGame"],
+//                    [ /*Colecionables*/ "Banpresto","Bandai","Jakks Pacific","Chibi"],
+//                    [ /*Audio*/ "Parlantes","Parlanes Gamer","Audifonos","Audifonos gamer"],
+//                    [ /*Electronica*/ "Smartphones","Smartwatch","Baterias Portatiles","TV Streaming"]
+//                ]; 
+                    
                  
                 var catTerc=[
                     [ //Gaming
