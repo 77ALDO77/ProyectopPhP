@@ -5,7 +5,7 @@
     <title>Inicio de Sesión</title>
     <link href="CSS/CrearCuenta.css" rel="stylesheet" type="text/css"/>
     <?php include('EncabezadoInicio.php'); ?>
-    <?php include("ConectaDB.php"); ?>
+    
     <?php include("CrearCuentaBD.php"); ?>
 </head>
 <body>

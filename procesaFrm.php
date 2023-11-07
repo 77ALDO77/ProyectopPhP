@@ -50,7 +50,7 @@ if($accion=="add"){
     
 echo $accion;
 
-    $sql = "INSERT INTO Reclamaciones (NomApe, Domicilio, Dni,Email,Numero,"
+    $sql = "INSERT INTO Reclamos (NomApe, Domicilio, Dni,Email,Numero,"
             . "tipoBien,Monto,Descripcion,TipoReclamo,Detalle,Pedido) "
             . "VALUES (?, ?, ? ,? ,? ,? ,? ,?, ?, ?, ?)";
     $sentencia = $cn->prepare($sql);

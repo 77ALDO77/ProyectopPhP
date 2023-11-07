@@ -8,3 +8,4 @@ function getConexion(){
     $cn = mysqli_connect($hostname,$username,$password,$database,$port)or die("Error al conectar");
     return $cn;
 }
+?>

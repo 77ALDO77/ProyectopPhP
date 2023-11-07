@@ -1,5 +1,7 @@
 <?php
+require_once './ConectaDB.php';
 $cn = getConexion();
+
 
 if (!empty($_POST["CrearCuenta"])) {
     if (empty($_POST["nombre"]) or empty($_POST["apellido"]) or empty($_POST["correo"]) or empty($_POST["Ntelefono"]) or empty($_POST["contraseña"])) {
