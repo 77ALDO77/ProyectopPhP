@@ -19,7 +19,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
             </div> 
             <div class="carrito-total">
                 <div class="fila">
-                    <strong>Tu Total</strong>
+                    <strong class="msj">Tu Total</strong>
                     <span class="carrito-precio-total">
                         S/ 0.00
                     </span>
