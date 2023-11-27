@@ -101,3 +101,11 @@ input[type="submit"]:hover{
     transition: .5s;    
 }
 
+.error{
+    background-color: red;
+    color:black;
+    padding:10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+}
