@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($contar > 0) {
             // Credenciales correctas, redirige al usuario a index.php
             session_start();
-            $_SESSION['correo'] = $correo;
+            $_SESSION['correo'] = $coreo;
             header("Location: index.php");
             exit;
         } else {
