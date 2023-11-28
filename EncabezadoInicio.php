@@ -36,7 +36,7 @@
         echo '</a>';
     } else {
         echo '<a style="font-size: 15px" href="InicioSesion1.php" class="InicioSesion">';
-        echo '<img src="Imagenes/InicioSesion.png"/><div>Mi Cuenta</div>';
+        echo '<img  src="Imagenes/InicioSesion.png"/><div >Mi Cuenta</div>';
         echo '</a>';
     }
     ?>
