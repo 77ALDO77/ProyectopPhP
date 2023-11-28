@@ -6,6 +6,7 @@
     <link href="CSS/EncabezadoInicio.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>TECHNOGAME</title>
+    <?php include('VerificarInicioSesion.php'); ?>
     <style>
         #carritoContainer {
             position: fixed;
@@ -27,7 +28,18 @@
                    <a style="font-size: 15px" href="#" class="Servicio al cliente">Servicio al cliente</a>
                    <a style="font-size: 15px" href="Nosotros.php" class="Comunidad">Sobre nosotros</a>
                    <a style="font-size: 15px" href="InicioSesion1.php" class="InicioSesion">
-                   <img src="Imagenes/InicioSesion.png"/> <div>Mi Cuenta</div></a> 
+     <?php
+    // Verifica si el usuario ha iniciado sesión
+    if (isset($_SESSION['nombre'])) {
+        echo '<a style="font-size: 15px" href="#" class="InicioSesion">';
+        echo '<img src="Imagenes/InicioSesion.png"/><div>' . $_SESSION['nombre'] . '</div>';
+        echo '</a>';
+    } else {
+        echo '<a style="font-size: 15px" href="InicioSesion1.php" class="InicioSesion">';
+        echo '<img src="Imagenes/InicioSesion.png"/><div>Mi Cuenta</div>';
+        echo '</a>';
+    }
+    ?>
                    <a style="font-size: 15px" href="Carrito.php" class="CarroCompra">
                    <img src="Imagenes/ImagenEncabezado/CarroCompra (2).png" onmouseover="cargarSlideCarrito()" value="obtenerProductosEnCarrito"><div>Su Carrito</div> </a>
            </nav>
@@ -47,7 +59,7 @@
                     carritoAbierto = true;
                 }
             };
-            xhttp.open("GET", "SlideCarrito.php", true);
+            xhttp.open( "GET", "SlideCarrito.php", true);
             xhttp.send();
         }
     }
@@ -58,6 +70,15 @@
         carritoAbierto = false;
     }
      
+</script>
+<script>
+    function cerrarSesion() {
+        // Aquí deberías agregar la lógica para cerrar la sesión en el servidor
+        // ...
+
+        // Después de cerrar sesión, redirige a la página de inicio de sesión
+        window.location.href = 'InicioSesion1.php';
+    }
 </script>
     
 </body>
