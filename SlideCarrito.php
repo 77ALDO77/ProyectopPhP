@@ -47,29 +47,48 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
                 <?php
                 $total = 0;
                 foreach ($sentencia as $producto) {
-                    $total += $producto["precio"];
+                    $subtotal = $producto["precio"] * $producto["cantidad"];
+                    $total += $subtotal;
                     ?>
-                    <div class="carrito-item">
+                    <div class="carrito-item" data-id-producto="<?php echo $producto["id"]; ?>">
+
                         <img src="Imagenes/ImgTeclados/<?php echo $producto["imagen"] ?>" width="80px" alt="">
                         <div class="carrito-item-detalles">
                             <span class="carrito-item-titulo"><?php echo $producto["nombre"]; ?></span>
                             <div class="selector-cantidad">
-                                <i class="fa-solid fa-minus restar-cantidad" ></i>
-                                <input type="text" value="1" class="carrito-item-cantidad" disabled>
-                                <i class="fa-solid fa-plus sumar-cantidad"></i>
+                                <form id="formRestarCantidad" action="#" method="post">
+                                    <input type="hidden" name="idProducto" value="<?php echo $producto["id"]; ?>">
+                                    <input type="hidden" name="accion" value="restarCantidad">
+                                    <button type="button" class="restar-cantidad" onclick="restarCantidad('<?php echo $producto["id"]; ?>')">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </button>
+                                </form>
+                                <input type="text" value="<?php echo $producto["cantidad"]; ?>" class="carrito-item-cantidad" readonly>
+                                <form id="formSumarCantidad" action="#" method="post">
+                                    <input type="hidden" name="idProducto" value="<?php echo $producto["id"]; ?>" >
+                                    <input type="hidden" name="accion" value="sumarCantidad">
+                                    <button type="button" class="sumar-cantidad" onclick="sumarCantidad('<?php echo $producto["id"]; ?>')">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </form>
                             </div>
-                            <span class="carrito-item-precio">S/ <?php echo $producto["precio"]; ?></span>
+                            <span class="carrito-item-precio">S/ <?php echo number_format($subtotal, 2); ?></span>
                         </div>
-                        <button class="btn-eliminar">
-                            <i class="fa-solid fa-trash"></i>
-                        </button>
+
+                        <form id="formEliminarProducto" action="#" method="post">
+                            <input type="hidden" name="idProducto" value="<?php echo $producto["id"]; ?>" >
+                            <input type="hidden" name="accion3" value="eliminarProducto">
+                            <button type="button" class="btn-eliminar" onclick="eliminarProducto('<?php echo $producto["id"]; ?>')">
+                                <i class="fa fa-trash-o"></i>
+                            </button>
+                        </form>
                     </div>
                 <?php } ?>
                 <div class="carrito-total">
                     <div class="fila">
                         <strong class="msj">Tu Total</strong>
                         <span class="carrito-precio-total">
-                            S/ <?php echo $total; ?>
+                            S/ <?php echo number_format($total, 2); ?>
                         </span>
                     </div>
                     <a class="btn-pagar" href="Carrito.php">Ir al Carrito <i class="fa-solid fa-bag-shopping"></i> </a>
@@ -77,41 +96,5 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
             </div>
         <?php } ?>
     </body>
-    <script>
-        // Funciones para sumar y restar cantidad
-
-        // Función para sumar cantidad
-        function sumarCantidad(event) {
-            var buttonClicked = event.target;
-            var selector = buttonClicked.parentElement;
-            var cantidadInput = selector.querySelector('.carrito-item-cantidad');
-            var cantidadActual = parseInt(cantidadInput.value);
-            cantidadActual++;
-            cantidadInput.value = cantidadActual;
-        }
-
-        // Función para restar cantidad
-        function restarCantidad(event) {
-            var buttonClicked = event.target;
-            var selector = buttonClicked.parentElement;
-            var cantidadInput = selector.querySelector('.carrito-item-cantidad');
-            var cantidadActual = parseInt(cantidadInput.value);
-            if (cantidadActual > 1) {
-                cantidadActual--;
-                cantidadInput.value = cantidadActual;
-            }
-        }
-
-        // Agregar eventos a los botones sumar y restar cantidad
-        var botonesSumarCantidad = document.querySelectorAll('.sumar-cantidad');
-        botonesSumarCantidad.forEach(function (button) {
-            button.addEventListener('click', sumarCantidad);
-        });
-
-        var botonesRestarCantidad = document.querySelectorAll('.restar-cantidad');
-        botonesRestarCantidad.forEach(function (button) {
-            button.addEventListener('click', restarCantidad);
-        });
-    </script>
 </html>
 

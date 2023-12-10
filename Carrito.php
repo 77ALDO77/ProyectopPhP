@@ -34,7 +34,7 @@ session_start();?>
                             <img src="Imagenes/ImgTeclados/<?php echo $producto["imagen"] ?>" width="80px" alt="">
                             <div class="carrito-item-detalles">
                                 <span class="carrito-item-titulo1"><?php echo $producto["nombre"]; ?></span>
-                                <span class="carrito-item-cantidad">Cantidad: 1</span>
+                                <span class="carrito-item-cantidad">Cantidad: <?php echo $producto["cantidad"]; ?></span>
                                 <span class="carrito-item-precio1">S/ <?php echo $producto["precio"]; ?></span>
                             </div>
                         </div>

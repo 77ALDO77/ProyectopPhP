@@ -57,7 +57,7 @@
                         $precios[]= $fila;
                     }
                 ?>    
-                    
+                
                 function rating() {
                     var rating = "";
                     var star = "<i class=\"fa-solid fa-star\"></i>";
@@ -66,6 +66,7 @@
                     }
                     return rating;
                 }
+                
 
                 var teclados = <?php  echo json_encode($imgs); ?>;
                 var idProductos = <?php  echo json_encode($ids); ?>;
