@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["cerrar_sesion"])) {
     exit;
 }
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST" && basename($_SERVER['PHP_SELF']) == 'verificarInicioSesion.php') {
     if (empty($_POST["correo"]) || empty($_POST["contraseña"])) {
         // Manejar el caso en que faltan campos obligatorios
         echo "Por favor, complete todos los campos.";
@@ -77,4 +77,3 @@ echo '</form>';
 
 $cn->close();
 ?>
-

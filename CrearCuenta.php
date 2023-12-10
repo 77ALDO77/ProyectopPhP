@@ -5,7 +5,6 @@
     <title>Inicio de Sesión</title>
     <link href="CSS/CrearCuenta.css" rel="stylesheet" type="text/css"/>
     <?php include('EncabezadoInicio.php'); ?>
-    
     <?php include("CrearCuentaBD.php"); ?>
 </head>
 <body>
@@ -36,6 +35,7 @@
             </div>
                    <form method="post" required>
             <input class="CrearCuenta" type="submit" name="CrearCuenta" value="Crear una cuenta" formaction="#">
+            
         </form>
  
     </div>
