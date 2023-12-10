@@ -47,8 +47,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
                 <?php
                 $total = 0;
                 foreach ($sentencia as $producto) {
-                    $subtotal = $producto["precio"] * $producto["cantidad"];
-                    $total += $subtotal;
+                    $subtotal = $producto["precio"] * $producto["cantidad"]; // Calcular el subtotal
+            $total += $subtotal;
                     ?>
                     <div class="carrito-item" data-id-producto="<?php echo $producto["id"]; ?>">
 
