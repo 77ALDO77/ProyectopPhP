@@ -67,18 +67,10 @@ function actualizarCantidadEnCarrito($idProducto, $nuevaCantidad) {
     $stmt->close();
     $cn->close();
 }
-function iniciarSesionSiNoEstaIniciada()
-{
-    if (session_status() !== PHP_SESSION_ACTIVE) {
-        session_start();
-    }
-}
 function obtenerInformacionCarrito()
 {
     $bd = getConexion();
-    iniciarSesionSiNoEstaIniciada();
     $idSesion = session_id();
-
     $sentencia = $bd->prepare("SELECT p.id, p.Nombre, p.Precio, p.Imagen,c.cantidad, c.total
                               FROM carrito_usuarios c
                               INNER JOIN Productos p ON c.id_producto = p.id

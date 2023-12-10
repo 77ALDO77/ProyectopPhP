@@ -21,7 +21,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 function quitarProductoDelCarrito($idProducto)
 {
     $bd = getConexion();
-    iniciarSesionSiNoEstaIniciada();
     $idSesion = session_id();
 
     $sentencia = $bd->prepare("DELETE FROM carrito_usuarios WHERE id_sesion = ? AND id_producto = ?");
@@ -37,17 +36,11 @@ function quitarProductoDelCarrito($idProducto)
     return $resultado;
 }
 
-function iniciarSesionSiNoEstaIniciada()
-{
-    if (session_status() !== PHP_SESSION_ACTIVE) {
-        session_start();
-    }
-}
+
 
 function obtenerInformacionCarrito()
 {
     $bd = getConexion();
-    iniciarSesionSiNoEstaIniciada();
     $idSesion = session_id();
 
     $sentencia = $bd->prepare("SELECT p.id, p.Nombre, p.Precio, p.Imagen,c.cantidad, c.total

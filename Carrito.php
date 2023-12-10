@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html>
-    <?php
-session_start();?>
     <head>
         <meta charset="UTF-8">
         <title>Carrito de Compra</title>

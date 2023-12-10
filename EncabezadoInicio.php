@@ -14,7 +14,7 @@
         </style>
         <script>
             var carritoAbierto = false;
-
+            
             function cargarSlideCarrito() {
                 if (!carritoAbierto) {
                     var carritoContainer = document.getElementById('carritoContainer');
@@ -54,6 +54,7 @@
                 carritoContainer.innerHTML = '';
                 carritoAbierto = false;
             }
+            
 
             function restarCantidad(idProducto) {
                 // Manejar la resta de cantidad sin recargar la página
@@ -261,7 +262,6 @@
                         carritoItemContainer.appendChild(nuevoElemento);
                     });
 
-    // Mostrar total y enlace para ir al carrito
                     var carritoTotal = document.createElement('div');
                     carritoTotal.className = 'carrito-total';
                     carritoTotal.innerHTML = `
@@ -315,10 +315,6 @@
 
         <script>
             function cerrarSesion() {
-                // Aquí deberías agregar la lógica para cerrar la sesión en el servidor
-                // ...
-
-                // Después de cerrar sesión, redirige a la página de inicio de sesión
                 window.location.href = 'InicioSesion1.php';
             }
         </script>
