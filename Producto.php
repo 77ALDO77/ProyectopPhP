@@ -36,6 +36,10 @@
                         <input type="hidden" value="<?php echo $producto['id']; ?>" name="id"/>
                         <button class="boton-item" type="submit">Agregar al Carrito</button>
                     </form>
+                    <form id="ProductoCertificado" action="generarCertificado.php" method="GET">
+                        <button type="submit" class="boton-item">Ver Certificado</button>
+                    </form>
+
                 </div>
             </div>
         <?php } ?>

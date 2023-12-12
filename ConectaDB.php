@@ -1,10 +1,10 @@
 <?php
 function getConexion(){
-    $hostname = "localhost";
+    $hostname = "127.0.0.1";
     $username = "root";
-    $password = "123123"; 
+    $password = ""; 
     $database ="technogame"; 
-    $port="3306";
+    $port="3307";
     $cn = mysqli_connect($hostname,$username,$password,$database,$port)or die("Error al conectar");
     return $cn;
 }
