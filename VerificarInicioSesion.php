@@ -11,20 +11,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["cerrar_sesion"])) {
     // Destruir la sesión
     session_destroy();
     
-    // Redirigir a la página de inicio de sesión
+    // Enviar al usuario a inicio de sesion
     header("Location: InicioSesion1.php");
     exit;
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && basename($_SERVER['PHP_SELF']) == 'verificarInicioSesion.php') {
     if (empty($_POST["correo"]) || empty($_POST["contraseña"])) {
-        // Manejar el caso en que faltan campos obligatorios
+        
         echo "Por favor, complete todos los campos.";
     } else {
         $correo = $_POST["correo"];
         $contraseña = $_POST["contraseña"];
 
-        // Verificar si las credenciales son correctas
+        // verificamos si los datos son correctos
         $checkCredentialsQuery = "SELECT COUNT(*) as contar FROM registrocuenta WHERE Correo = ? AND Contraseña = ?";
         $stmt = $cn->prepare($checkCredentialsQuery);
         $stmt->bind_param("ss", $correo, $contraseña);
@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && basename($_SERVER['PHP_SELF']) == 'v
         $stmt->close();
 
         if ($contar > 0) {
-            // Credenciales correctas, ahora obtenemos el nombre
+            // verificamos si las credenciales son correctas y obtenemos el nombre 
             $getNombreQuery = "SELECT Nombre FROM registrocuenta WHERE Correo = ?";
             $stmtNombre = $cn->prepare($getNombreQuery);
             $stmtNombre->bind_param("s", $correo);
@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && basename($_SERVER['PHP_SELF']) == 'v
             $_SESSION['nombre'] = $nombre;
             $_SESSION['usuario_iniciado'] = true;
             
-            // Redirigir al usuario a index.php
+            
             header("Location: index.php");
             exit;
         } else {
