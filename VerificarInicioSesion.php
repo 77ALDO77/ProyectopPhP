@@ -25,11 +25,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && basename($_SERVER['PHP_SELF']) == 'v
         $contraseña = $_POST["contraseña"];
 
         // Verificar si las credenciales son correctas
-        $checkCredentialsQuery = "SELECT COUNT(*) as contar, Nombre FROM registrocuenta WHERE Correo = ? AND Contraseña = ?";
+        $checkCredentialsQuery = "SELECT COUNT(*) as contar FROM registrocuenta WHERE Correo = ? AND Contraseña = ?";
         $stmt = $cn->prepare($checkCredentialsQuery);
         $stmt->bind_param("ss", $correo, $contraseña);
         $stmt->execute();
-        $stmt->bind_result($contar, $nombre);
+        $stmt->bind_result($contar);
         $stmt->fetch();
         $stmt->close();
 
