@@ -17,7 +17,7 @@
             <div class="product-container">
                 <div class="item">
                     <div class="product-image">
-                        <img src="Imagenes/ImgTeclados/<?php echo $producto["imagen"] ?>" alt="" class="img-item">
+                        <img src="Imagenes/ImgProductos/<?php echo $producto["imagen"] ?>" alt="" class="img-item">
                     </div>
                     <div class="product-details">
                         <h2 class="titulo-item"><?php echo $producto["nombre"]; ?></h2>

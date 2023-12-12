@@ -238,7 +238,7 @@
                         nuevoElemento.setAttribute('data-id-producto', producto.id);
                         nuevoElemento.innerHTML = `
             <div class="carrito-item" data-id-producto="${producto.id}">
-                <img src="Imagenes/ImgTeclados/${producto.Imagen}" width="80px" alt="">
+                <img src="Imagenes/ImgProductos/${producto.Imagen}" width="80px" alt="">
                 <div class="carrito-item-detalles">
                     <span class="carrito-item-titulo">${producto.Nombre}</span>
                     <form>

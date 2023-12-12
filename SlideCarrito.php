@@ -52,7 +52,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
                     ?>
                     <div class="carrito-item" data-id-producto="<?php echo $producto["id"]; ?>">
 
-                        <img src="Imagenes/ImgTeclados/<?php echo $producto["imagen"] ?>" width="80px" alt="">
+                        <img src="Imagenes/ImgProductos/<?php echo $producto["imagen"] ?>" width="80px" alt="">
                         <div class="carrito-item-detalles">
                             <span class="carrito-item-titulo"><?php echo $producto["nombre"]; ?></span>
                             <div class="selector-cantidad">

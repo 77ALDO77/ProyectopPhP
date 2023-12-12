@@ -10,7 +10,7 @@
     <footer >
         <div class="PieDePagina">
             <div class="contacto">
-                <h3><a href="index.php">CONTÁCTENOS</a></h3>
+                <h3><a href="contactenos_ubiquenos.php">CONTÁCTENOS</a></h3>
                 <hr></hr>
                 <h4><strong><h4>Redes Sociales</h4></strong></h4>
                 <hr></hr> 

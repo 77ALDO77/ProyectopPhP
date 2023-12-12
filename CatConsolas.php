@@ -24,7 +24,14 @@
                         $imgs[]= $fila["Imagen"];
                     }
                 ?>
-                     
+                <?php 
+                    $sqlST="select id from Productos where idCategoriaN2=1;";
+                    $result= mysqli_query($cn,$sqlST);
+                    $Productos=[];
+                    while($fila= mysqli_fetch_assoc($result)){  
+                        $ids[]= $fila["id"];
+                    }
+                ?>      
                 <?php 
                     $sqlST="select Nombre from Productos where idCategoriaN2=1;";
                     $result= mysqli_query($cn,$sqlST);
@@ -53,7 +60,8 @@
                     return rating;
                 }
                 
-                var consolas=<?php  echo json_encode($imgs); ?>;      
+                var consolas=<?php  echo json_encode($imgs); ?>;
+                var idProductos = <?php  echo json_encode($ids); ?>;
                 var  nombreProduct=<?php  echo json_encode($nombres); ?>;
                 var precioProduct=<?php  echo json_encode($precios); ?>;
                 
@@ -67,13 +75,17 @@
                     }else if(numpro%3==0){
                         movida="zoom-in-up";
                     }
-                    
+                    if (nombreProduct[i] == "PlayStation 5 Consola (ranura disco) + God of War Ragnarok") {
+                        detalleProd = "Producto.php";
+                    } else {
+                        detalleProd = "#";
+                    }
                     
                     prod=`<div class="product">
                                 <div class="productImg" data-aos="${movida}" data-aos-duration="500">
-                                    <a href="#">
+                                    <a href="${detalleProd}">
                                         <div class="image">
-                                            <img src="Imagenes/ImgConsolas/${consolas[i]}" alt=""/>
+                                            <img src="Imagenes/ImgProductos/${consolas[i]}" alt=""/>
                                         </div>
                                     </a>
                                 </div>
@@ -82,7 +94,17 @@
                                     <div><p class="productName">${nombreProduct[i]}</p></div>
                                     <div class="rating">${rating()}</div>
                                     <div><span class="price">${precioProduct[i]}</span></div>
-                                </div>        
+                                </div>
+                          <form action="Producto.php" method="post">
+                                    <input type="hidden" value="obtenerProducto" name="accion"/>
+                                    <input type="hidden" value="${idProductos[i]}" name="id"/>
+                                    <button class="btndetalles" type="submit">Detalles</button>
+                                </form>
+                                <form onsubmit="agregarAlCarrito(event, ${idProductos[i]})">
+                                    <input type="hidden" value="agregarProductoAlCarrito" name="accion1"/>
+                                    <input type="hidden" value="${idProductos[i]}" name="id"/>
+                                    <button class="btnagregar" type="submit">Agregar al Carrito</button>
+                                </form>
                           </div>`;
         
                     
@@ -92,13 +114,36 @@
             </script>
             
         </div>
-        
+        <script>
+            function agregarAlCarrito(event, id) {
+        event.preventDefault();
+        const formData = new FormData();
+        formData.append('accion1', 'agregarProductoAlCarrito');
+        formData.append('id', id);
+
+        fetch('funciones-carrito.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
+        .then(data => {
+            console.log(data); // Maneja la respuesta según sea necesario
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    }
+            AOS.init();
+        </script>
         
         
         <?php include('PieInicio.php'); ?>
         
-        <script>
-          AOS.init();
-        </script>
+        
     </body>
 </html>

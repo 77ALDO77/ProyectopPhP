@@ -93,7 +93,7 @@
                                 <div class="productImg" data-aos="${movida}" data-aos-duration="500">
                                     <a href="${detalleProd}">
                                         <div class="image">
-                                            <img src="Imagenes/ImgTeclados/${teclados[i]}" alt=""/>
+                                            <img src="Imagenes/ImgProductos/${teclados[i]}" alt=""/>
                                         </div>
                                     </a>
                                 </div>
