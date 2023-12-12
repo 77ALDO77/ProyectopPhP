@@ -72,7 +72,7 @@ echo '</form>';
 
 
 } else {
-    // Resto del código si el usuario no ha iniciado sesión
+   
 }
 
 $cn->close();
