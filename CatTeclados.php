@@ -26,8 +26,8 @@
                     $sqlST="select Imagen from Productos where idCategoriaN2=3;";
                     $result= mysqli_query($cn,$sqlST);
                     $Productos=[];
-                    while($fila= mysqli_fetch_column($result)){  
-                        $imgs[]= $fila;
+                    while($fila= mysqli_fetch_assoc($result)){  
+                        $imgs[]= $fila["Imagen"];
                     }
                 ?>
                     
@@ -35,8 +35,8 @@
                     $sqlST="select id from Productos where idCategoriaN2=3;";
                     $result= mysqli_query($cn,$sqlST);
                     $Productos=[];
-                    while($fila= mysqli_fetch_column($result)){  
-                        $ids[]= $fila;
+                    while($fila= mysqli_fetch_assoc($result)){  
+                        $ids[]= $fila["id"];
                     }
                 ?> 
                     
@@ -44,8 +44,8 @@
                     $sqlST="select Nombre from Productos where idCategoriaN2=3;";
                     $result= mysqli_query($cn,$sqlST);
                     $Productos=[];
-                    while($fila= mysqli_fetch_column($result)){  
-                        $nombres[]= $fila;
+                    while($fila= mysqli_fetch_assoc($result)){  
+                        $nombres[]= $fila["Nombre"];
                     }
                 ?>
                     
@@ -53,8 +53,8 @@
                     $sqlST="select Precio from Productos where idCategoriaN2=3;";
                     $result= mysqli_query($cn,$sqlST);
                     $Productos=[];
-                    while($fila= mysqli_fetch_column($result)){  
-                        $precios[]= $fila;
+                    while($fila= mysqli_fetch_assoc($result)){  
+                        $precios[]= $fila["Precio"];
                     }
                 ?>    
                 
