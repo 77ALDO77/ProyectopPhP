@@ -14,11 +14,11 @@ if($accion=="add"){
     $email=$_POST["email"];
     $numero=$_POST["numero"];
     
-    $tipoBien="Producto";
+    $tipoBien=$_POST["tipoBien"];
     $monto=$_POST["monto"];
     $descripcion=$_POST["descripcion"];
     
-    $tipoReclamo="Queja";
+    $tipoReclamo=$_POST["tipoReclamo"];
     $detalle=$_POST["detalle"];
     $pedido=$_POST["pedido"];
     
