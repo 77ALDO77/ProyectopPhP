@@ -153,8 +153,17 @@
                             case "Teclados":
                                 link="CatTeclados.php";
                                 break;
+                            case "Juegos":
+                                link="CatJuegos.php";
+                                break;
                             case "Consolas":
                                 link="CatConsolas.php";
+                                break;
+                            case "Mando":
+                                link="CatMando.php";
+                                break;
+                            case "Streaming":
+                                link="CatStreaming.php";
                                 break;
                             default:
                                 link="#";

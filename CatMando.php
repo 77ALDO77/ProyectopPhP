@@ -23,7 +23,7 @@
             <script type="text/javascript">
                     
                 <?php 
-                    $sqlST="select Imagen from Productos where idCategoriaN2=3;";
+                    $sqlST="select Imagen from Productos where idCategoriaN2=4;";
                     $result= mysqli_query($cn,$sqlST);
                     $Productos=[];
                     while($fila= mysqli_fetch_assoc($result)){  
@@ -32,7 +32,7 @@
                 ?>
                     
                 <?php 
-                    $sqlST="select id from Productos where idCategoriaN2=3;";
+                    $sqlST="select id from Productos where idCategoriaN2=4;";
                     $result= mysqli_query($cn,$sqlST);
                     $Productos=[];
                     while($fila= mysqli_fetch_assoc($result)){  
@@ -41,7 +41,7 @@
                 ?> 
                     
                 <?php 
-                    $sqlST="select Nombre from Productos where idCategoriaN2=3;";
+                    $sqlST="select Nombre from Productos where idCategoriaN2=4;";
                     $result= mysqli_query($cn,$sqlST);
                     $Productos=[];
                     while($fila= mysqli_fetch_assoc($result)){  
@@ -50,7 +50,7 @@
                 ?>
                     
                 <?php 
-                    $sqlST="select Precio from Productos where idCategoriaN2=3;";
+                    $sqlST="select Precio from Productos where idCategoriaN2=4;";
                     $result= mysqli_query($cn,$sqlST);
                     $Productos=[];
                     while($fila= mysqli_fetch_assoc($result)){  
