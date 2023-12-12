@@ -23,8 +23,8 @@
                 $sqlST="select Nombre from CategoriasN1;";
                 $result= mysqli_query($cn,$sqlST);
                 $cateN1=[];
-                while($fila= mysqli_fetch_column($result)){  
-                    $cateN1[]= $fila;
+                while($fila= mysqli_fetch_assoc($result)){  
+                    $cateN1[]= $fila["Nombre"];
                 }
             ?>
             
